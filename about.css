@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  background-color: white;
+  color: #4b4848;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 18px;
+  font-weight: 800;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+.menu li a {
+  text-decoration: none;
+  color: #4b4848;
+  padding: 10px 15px;
+  font-size: 13px;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+.menu li a:hover {
+  background-color: #4b4848;
+  color: white;
+  border-radius: 5px;
+}
+.menu {
+  display: flex;
+  margin-left: 20px;
+}
+.about{
+    background-image: url(./neve-fse-img12.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}
+p{
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 50%;
+    color: rgb(0, 0, 0);
+}
