@@ -1,13 +1,189 @@
 img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border-radius: 20px;
-    border: none;
+ height: 205px ;
+ width: 210px ;
+ border-radius: 15%;
+ border: white 5px solid;
+ margin: 10px;
+ margin-left: -10px;
 }
 .profile_header{
     text-align: center;
+    font-size: 30px;
+    font-style: bold;
+     font-weight: bolder;
+    margin-left: -90px;
 }
 .contact_header{
+    text-align: left;
+    font-size: 27px;
+    font-style: bold;
+    font-weight: bolder;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.profile_content{
+    text-align: left;
+    font-size: 18px;
+    padding: 25px;
+    margin-top: -25px;
+} 
+.contact_content{
+    text-align: left;
+    font-size: 20px;
+    margin-left: -20px;
+}
+header{
     text-align: center;
+    font-style: bold;
+     font-weight: bolder;
+}
+.header_combine{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 75px;
+    justify-content: center;
+    margin-left: 95px;
+    width: 500px;
+}
+.sidebar{
+    width: 25%;
+
+}
+.main_combine{
+    display: flex;
+}
+.box1{
+    background: #638d8d;
+    padding: 10px;
+    position: relative;
+    width: 40%;
+    margin-top: 30px;
+    height: auto;
+}
+.box2{
+    background: #d6d6d6;
+    padding: 10px;
+    height: auto;
+    width: 40%;
+}
+.box3{
+    padding: 10px;
+    margin: 10px;
+    margin-left: 30px;
+}
+.magic{
+    position: absolute;
+}
+.magic2{
+    margin-top: 315px;
+
+}
+.magic3{
+    margin-top: 315px;
+}
+body{ 
+    margin: 0;
+    padding: 0;
+    background:#f3f3f3;
+    padding-left: 520px;
+    padding-right: 520px;
+}
+.list_item{
+    list-style-type: none;
+}
+.header_text{
+    font-size: 40px;
+    text-align: left;
+    color: white;
+    font-style: bold;
+    font-weight: bolder;
+}
+.header_text2{
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    font-style: bold;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+.education_header{
+    font-size: 30px;
+    text-align: left;
+    font-style: bold;
+    font-weight: bolder;
+}
+.education_content1{
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 22px;
+    text-align: left;
+    max-width:400px ;
+  
+}
+.education_content2{
+    font-size: 20px;
+    font-style: italic;
+    text-align: left;
+      max-width: 300px;
+}
+.language_header{
+    font-size: 30px;
+    text-align: left;
+    font-style: bold;
+    font-weight: bolder;
+    margin-top: 40px;
+}
+.language_content{
+    font-size: 20px;
+    text-align: left;
+    margin-left: -40px;
+    margin-top: -20px;
+}
+.computer_header{
+    font-size: 30px;
+    text-align: left;
+    font-style: bold;
+    font-weight: bolder;
+}
+.computer_content{
+    font-size: 20px;
+ margin-left: -40px;
+    text-align: left;
+    margin-top: -10px;
+}
+.padding{
+    padding: 20px;
+}
+.bolder{
+    font-weight: 900;
+    font-size: 24px; 
+}
+
+.namefont {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+.sectionfont {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.subtitle {
+    font-family: Arial, sans-serif;
+    font-weight: 700; 
+
+    color: #333;
+}
+.otherfont{
+    font-family: Arial, sans-serif; /* Regular */
+    font-weight: 400;
+    line-height: 1.6;
+}
+.line_height{
+    line-height: 1.6;
 }
