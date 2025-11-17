@@ -1,0 +1,13 @@
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-radius: 20px;
+    border: none;
+}
+.profile_header{
+    text-align: center;
+}
+.contact_header{
+    text-align: center;
+}
