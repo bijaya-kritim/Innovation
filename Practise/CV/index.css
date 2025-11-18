@@ -5,6 +5,7 @@ img{
  border: white 5px solid;
  margin: 10px;
  margin-left: -10px;
+ object-fit: position;
 }
 .profile_header{
     text-align: center;
@@ -12,6 +13,7 @@ img{
     font-style: bold;
      font-weight: bolder;
     margin-left: -90px;
+    
 }
 .contact_header{
     text-align: left;
@@ -60,6 +62,8 @@ header{
     width: 40%;
     margin-top: 30px;
     height: auto;
+    object-fit: position;
+
 }
 .box2{
     background: #d6d6d6;
@@ -98,6 +102,7 @@ body{
     color: white;
     font-style: bold;
     font-weight: bolder;
+    
 }
 .header_text2{
     font-size: 20px;
@@ -186,4 +191,8 @@ body{
 }
 .line_height{
     line-height: 1.6;
+}
+.no_underline{
+    text-decoration: none;
+    color: black;
 }
