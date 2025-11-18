@@ -1,0 +1,122 @@
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;        
+  padding: 50px 0;
+  background-color: #111;
+}
+
+
+
+.profile-pic {
+  width: 500px;          /* size of the circle */
+  height: 500px;
+  border-radius: 200%;    /* makes it round */
+  object-fit: cover;     /* crops image nicely */
+  display: block;
+  margin: 20px auto;     /* centers the image */
+  border: 3px solid #fff;
+}
+
+#profile {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 500px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #333;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.social-links a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.nav-container.links{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.nav-container.links{
+  position: relative;
+  font: 1.2rem;
+}
+
+section {
+  padding: 2rem;
+  background: rgb(219, 206, 206);
+  margin: 1rem auto;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+.project {
+  background: #d1c2c2;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+}
+
+
+
+
+
+
