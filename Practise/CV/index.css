@@ -62,7 +62,6 @@ header{
     width: 40%;
     margin-top: 30px;
     height: auto;
-    object-fit: position;
 
 }
 .box2{
@@ -195,4 +194,13 @@ body{
 .no_underline{
     text-decoration: none;
     color: black;
+}
+.form_label{
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    font-weight: bold;
+     border: black 2px solid;
+     padding: 5px;
+     border-radius: 50px;
 }

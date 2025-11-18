@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form</title>
+    <link rel="stylesheet" href="./appointment.css">
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>
+                Appointment Form
+            </legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            <br><br>
+            <label for="phone-Number">Phone Number:</label>
+            <input type="tel" id="phone-Number" name="phone-Number" pattern="[0-9]{10}" placeholder="10 digit without country code" required>
+            <br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="other">male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <br><br>
+            <label for="time">Time:</label>
+            <select id="time" name="time" required>
+            <optgroup label="Short Term">
+                    <option value="1">15mins</option>
+                    <option value="2">30mins</option>
+                </optgroup>
+                <optgroup label="Long Term">
+                    <option value="3">1hrs</option>
+                    <option value="4">2hrs</option>
+                </optgroup>
+               
+            </select> - Note: for more than 2hrs contact support
+            <br><br>
+            <label for="dob">Time:</label>
+            <input type="time"> - Note: Please select a time between 9:00 AM and 5:00 PM 
+            <br><br>
+            <label for="cv">Relevent Document:</label>
+            <input type="file" id="document" name="document" required>
+            <br><br>
+            <label for="Location">Meet-up Location:</label>
+            <input type="text" placeholder="eg: cafe, office etc...">
+            <br><br>
+            <label for="comments">Additional Information:</label>
+            <br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Your comments here..."></textarea>
+            <br><br>
+            <input type="checkbox">
+            <label for="verify">I accept that this data are true and valid</label>
+            <br><br>
+            <input type="submit" value="Book Appointment">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+
+</html>
