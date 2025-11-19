@@ -58,21 +58,21 @@ header {
 }
 
 nav a {
-  color: #fff;
+  color: #c5b8b8;
   margin: 0 10px;
   text-decoration: none;
 }
 
 section {
   padding: 2rem;
-  background: white;
+  background: rgb(200, 186, 186);
   margin: 1rem auto;
   max-width: 800px;
   border-radius: 8px;
 }
 
 .project {
-  background: #eee;
+  background: #b1a7a7;
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 4px;
