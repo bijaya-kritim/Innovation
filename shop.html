@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>simple web Page</title>
+    <title>shop</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="shop.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -13,6 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="portfolio.css">
   </head>
   <body>
     <nav>
@@ -22,7 +23,7 @@
           <h1 class="second">ELLO</h1>
         </div>
         <div class="navigate">
-          <ul>
+         <ul>
             <li><a href="./alice.html">HOME</a></li>
             <li><a href="./pages.html">PAGES</a></li>
             <li><a href="./shop.html">SHOP</a></li>
@@ -38,75 +39,83 @@
         <div class="cartTitle">Cart</div>
       </div>
     </nav>
-  <section class="outer">
-    <div class="content-img">
-        <div class="hero-text">
-            <h1>Send <span class="highlight">flowers</span> like you mean it.</h1>
-            <p>Where flowers are our inspiration to create lasting memories.  
-               Whatever the occasion, our flowers will make it special.</p>
-            <div class="signature">Mircalla</div>
+    <section >
+      <div class="left">
+        <h4><i>Filter By Price</i></h4>
+        <div class="range"><input type="range" /></div>
+        <div class="rangePrice"><button class="rangeBtn">$20.00</button><button class="rangeBtn">$80.00</button></div>
+        <div class="catList"><h4><i>Categories</i></h4>
+        <ul><li>Flower arrangements (12)</li>
+        <li>Flowers(12)</li>
+        <li>Workshop(12)</li>
+        <li>Flower pot(13)</li>
+        <li>Flower Decoratives</li>
+        <li>Online Booking</li>
+        <li>New Items</li>
+        <li>Different Flower species(14)</li>
+        <li>Flower Bouquet</li>
+      
+      
+      
+      </ul></div>
+      </div>
+      <div class="right">
+        <div class="shopTitle">
+          <p class="smallDetail">Home/shop</p>
+          <h1><i>Shop</i></h1>
+        </div>
+        <div class="result">
+          <p>Showing All Result</p>
+          <div class="select">
+            <select>
+              <option>Default Sorting</option>
+              <option value="">Flowers</option>
+              <option value="">Bouquet</option>
+            </select>
+          </div>
         </div>
 
-       
-</div>
-<div class="categories">
-        <a class="active">All</a>
-        <a>Popular</a>
-        <a>Winter</a>
-        <a>Various</a>
-        <a>Exotic</a>
-        <a>Greens</a>
-        <a>Cactuses</a>
+        <section class="products sshop">
+          <div class="productShop">
+            <img src="./images/blue peony.webp" alt="blue peony" />
+            <div class="pDetail">
+              <h3>Blue peony</h3>
+              <div class="price">
+                <h3 class="cross"><s>$55.34</s></h3>
+                <h3><u>$50.00</u></h3>
+              </div>
+            </div>
+            <button>Add to cart</button>
+            <div class="sale">Sale!</div>
+          </div>
 
-        <div class="filter">Filter ▼</div>
-    </div>
-    <section class="products" id="1">
-        <div class="product">
-            <img src="./images/cactus.webp" alt="Cactus">
-            <h3>Cactus</h3>
-        </div>
+          <div class="productShop">
+            <img src="./images/orchid.webp" alt="Flower Vase" />
+            <div class="pDetail">
+              <h3>White Lily</h3>
+              <div class="price">
+                <h3><u>$35.00</u></h3>
+              </div>
+            </div>
+            <button>Add to cart</button>
+          </div>
 
-        <div class="product">
-            <img src="./images/flower vase.webp" alt="Flower Vase">
-            <h3>Flower Vase</h3>
-        </div>
-
-        <div class="product sold">
-            <div class="sold-tag">Sold</div>
-            <img src="./images/plant.webp" alt="Plant">
-            <h3>Plant</h3>
-        </div>
-
-        <div class="product sold">
-            <div class="sold-tag">Sold</div>
-            <img src="./images/tulip vase.jpg" alt="Tulip">
-            <h3>Tulips</h3>
-        </div>
-        <div class="product sold">
-            <div class="sold-tag">Sold</div>
-            <img src="./images/lill.webp" alt="lily">
-            <h3>Lilly</h3>
-        </div>
-
-        <div class="product">
-            <img src="./images/crochet.jpg" alt="Flower crochet">
-            <h3>Crochet Tulip</h3>
-        </div>
-
-        <div class="product">
-            
-            <img src="./images/decorative.jpg" alt="decorative">
-            <h3>Decorative</h3>
-        </div>
-
-        <div class="product">
-            <img src="./images/pot plant.webp" alt="watering pot">
-            <h3>watering pot</h3>
-        </div>
+          <div class="productShop sold">
+            <div class="sale">Sale!</div>
+            <img src="./images/carnation.webp" alt="Plant" />
+            <div class="pDetail">
+              <h3>Fresh Carnation</h3>
+              <div class="price">
+                <h3 class="cross"><s>$70.00</s></h3>
+                <h3><u>$65.00</u></h3>
+              </div>
+            </div>
+            <button>Add to cart</button>
+          </div>
         </section>
-        </section>
-        
-   <footer id="footer">
+      </div>
+    </section>
+     <footer id="footer">
       <div class="ft_container">
         <div class="links2">
           <h4 class="last">Quick links</h4>

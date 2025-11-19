@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking.css">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <nav>
+      <div class="navbar">
+        <div class="nav_logo">
+          <h1 class="first">FIOR</h1>
+          <h1 class="second">ELLO</h1>
+        </div>
+        <div class="navigate">
+         <ul>
+            <li><a href="./alice.html">HOME</a></li>
+            <li><a href="./pages.html">PAGES</a></li>
+            <li><a href="./shop.html">SHOP</a></li>
+            <li><a href="./portfolio.html">PORTFOLIO</a></li>
+            <li><a href="./booking.html">BOOK US</a></li>
+            <li><a href="./addProduct.html">ADD PRODUCT</a></li>
+          </ul>
+        </div>
+        <div class="icon">
+          <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <div class="lock"><i class="fa-solid fa-lock"></i></div>
+        </div>
+        <div class="cartTitle">Cart</div>
+      </div>
+    </nav>
+    <section class="booked">
+   <div class="form-container">
+    
+    
+
+    <h2>Booking Form</h2>
+    <p class="subtext">Fill the form below to book your appointment.</p>
+
+    <form>
+
+        <label class="title">Select the services you want to get the booking for:</label>
+
+        <div class="radio-group">
+           <div class="label"><input type="radio" name="service"> <span>Wedding</span></div>
+           <div class="label"><input type="radio" name="service"> <span>Special Occasion</span></div>
+           
+           <div class="label"><input type="radio" name="service">  <span>Memorial services</span></div>
+           <div class="label"><input type="radio" name="service">  <span>Large scale event</span></div>
+           <div class="label"><input type="radio" name="service">  <span>Funeral</span></div>
+
+            
+        </div>
+
+        <label class="title">Specify what arrangements do you like</label>
+        <div class="radio-group">
+            <div class="label"><input type="checkbox" name="attendee"><span>Bouquets</span></div>
+            <div class="label"><input type="checkbox" name="attendee"><span>Centerpieces</span></div>
+            <div class="label"><input type="checkbox" name="attendee"><span>Cascading design</span></div>
+            <div class="label"><input type="checkbox" name="attendee"><span>Ikebana styles</span></div>
+            <div class="label"><input type="checkbox" name="attendee"><span> wreaths</span></div>
+           
+        </div>
+        <label class="title">Appointment Date</label>
+        <input type="date" required>
+         <div class="contact">
+        <h3>Contact Info</h3>
+        <p class="subtext small">Give your contact information.</p>
+
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Id" required>
+        <input type="text" placeholder="Contact Number" required>
+        <textarea placeholder="Message/Suggestions"></textarea>
+        </div>
+
+        <button type="submit">Book Appointment</button>
+
+    </form>
+
+</div>
+    </section>
+    
+
+
+
+
+</body>
+</html>
