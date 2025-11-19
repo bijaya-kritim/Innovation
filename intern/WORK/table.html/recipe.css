@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+
+}
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            font-size: 16px;
+        } 
+        .one{
+        display: flex;
+        }
+        .margin{
+            margin-left: 15rem;
+            text-align: left;
+
+        }
