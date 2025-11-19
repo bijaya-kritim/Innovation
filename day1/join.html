@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+    <link rel="stylesheet" href="./join.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Neve FSE</div>
+      <div class="menu">
+        <ul>
+          <li><a href="./smritee.html">HOME</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./blog.html">BLOG</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+          <li><a href="./join.html">COLLAB</a></li>
+          <li><i class="fa-solid fa-cart-shopping"></i></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <form action="">
+        <fieldset style="margin: 50px; padding: 20px;">
+          <legend>
+            <h1>Website Intake Form</h1>
+          </legend>
+          <label for="name">Name</label><br><br>
+          <input type="text" name="name" placeholder="First Name"/> 
+          <input type="text" name="name" placeholder="Last Name" /> <br /><br />
+          <label for="email">Email</label> <br> 
+          <input type="email" name="email" placeholder="abc123@gmail.com"/> <br /> <br>
+          <label for="Phone">Phone Number</label><br>
+          <input type="tel" name="phone" placeholder="(000) 000-0000" /> <br /><br />
+          
+        <label for="budget">What is Your estimated budget?</label> <br></BR>
+               <select name="" id="">
+                <optgroup label="Budget Range">
+                    <option value=""></option>
+                    <option value="">$1000-$5000</option>
+                    <option value="">$5000-$10,000</option>
+                    <option value="">$10,000+</option>
+                </optgroup>
+               </select><br><br>
+               <label for="msg">What is this project about?</label>
+                <br><br>
+                <textarea type="text"  rows="5" cols="30"></textarea>
+                <br><br>
+                <label for="address">What is your current or intented website address?</label><br><br>
+                <input type="url" name="address" placeholder="www.example.com"/>
+                <br><br>
+                <label for="page">Approximately how many pages/sections will your website have?</label><br><br>
+                <input type="number" name="page" placeholder="ex:20" />
+                <br><br>
+                <label for="host">Do you need Hosting?</label> <br><br>
+                <input type="radio" name="host" />Yes <br>
+                <input type="radio" name="host" />No
+                <br><br>  
+                <label for="seo">How important is Search Engine Optimization for your website?</label> <br> <br>
+                 <select name="seo" id="">
+                  <optgroup>
+                    <option value=""> </option>
+                    <option value="">Not Important</option>
+                    <option value="">Somewhat Important</option>
+                    <option value="">Very Important</option>
+                  </optgroup>
+                 </select>
+                  <br><br>
+                  <label for="content">Will the existing website be used?</label> <br> <br>
+                  <input type="radio" name="content" />Yes <br>
+                  <input type="radio" name="content" />No  <br><br>
+                  <label for="audience">Who is your target audience?</label>
+                  <br><br>
+                  <textarea type="text"  rows="5" cols="30"></textarea>
+                  <br><br>
+                  <label for="project">Do you have color scheme?</label> <br><br>
+                  <textarea type="text"  rows="5" cols="30"></textarea>
+                  <br><br>
+                  <label for="file">Please list your reference websites.</label>
+                  <input type="file">  <br><br>
+                  <label for="date">Date to complete</label> <br> <br>
+                  <input type="date"> <br><br>
+                  <label for="msg">Further Message</label> <br><br>
+                  <textarea name="msg" id="" placeholder="Additional message" rows="5" cols="30"></textarea> <br> <br>
+                  <button type="submit" style="margin: 20px;padding:  10px 30px; border-radius: 5px; border: none; background-color:  rgb(69, 87, 255); color: #ffffff; font-size: large 2;">Submit</button>
+        </fieldset>
+      </form>
+
+          
+    </main>
+  </body>
+</html>

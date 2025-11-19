@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+</head>
+<body>
+    <form action="">
+        <fieldset style="margin: 50px;">
+            <legend>
+                <h1>Application Form</h1>
+            </legend>
+                <label for="name">Name</label>
+                <input type="text" name="name"> <br>
+                <label for="email">Email</label>
+                <input type="email" name="email"> <br>
+                <label for="password">Password</label>
+                <input type="password" name="password"> <br>
+                <label for="Gender">Gender</label>
+                <input type="radio" name="gender" id="gen">Male
+                <input type="radio" name="gender" id="ge">Female <br>
+                <label for="course">Select your course</label>
+                    <Select name="" id="">
+                        <optgroup label="Commerce">
+                            <option value="">BBA</option>
+                            <option value="">BBS</option>
+                        </optgroup>
+                        <optgroup label="IT">
+                            <option value="">BCA</option>
+                            <option value="">BIT</option>
+                        </optgroup>
+                    </Select> <br> <br>
+                    <label for="rules">Rules you must comply with</label> <br>
+                    <input type="checkbox" names="rules">Arrive on time <br>
+                                <input type="checkbox" names="rules">Complete all Task <br>
+                                <input type="checkbox" names="rules">No Phone <br>
+                                <label for="date">Date of birth</label>
+                                <input type="date">
+                                <br>
+                                <input type="month">
+                                <input type="week">
+                                <br>
+                                <input type="time"> <br>
+                                <input type="datetime-local"><br><br>
+                                <label for="file">Upload your resume</label>
+                                <input type="file" name="">
+                                <br>
+                                <label for="color">Choose your favourite color</label>
+                                <input type="color">
+                                <br>
+                                <label for="">Dedication Range</label>
+                                <input type="range" min="0" max="100" value ="50">
+                                <br><br>
+                                <textarea type="text" placeholder="Enter your message" rols="5" cols="30">
+                                <button type="submit">Submit</button>
+                                <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>

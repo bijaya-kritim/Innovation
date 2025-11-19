@@ -10,10 +10,15 @@ body {
 header {
   background-color: white;
   color: #4b4848;
-  padding: 20px;
+  width: 100%;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.navbar{
+  position:sticky;
+  top:0;
 }
 .logo {
   font-size: 18px;
@@ -90,7 +95,7 @@ p {
   gap: 200px;
   
   i{
-    background-color: rgb(69, 87, 255) ;
+    background-color:  rgb(69, 87, 255) ;
     padding:20px;
     border-radius:5px;
     color: white;

@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(./neve-fse-img12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  background-color: white;
+  color: #4b4848;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar{
+  position:sticky;
+  top:0;
+}
+.logo {
+  font-size: 18px;
+  font-weight: 800;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+.menu li a {
+  text-decoration: none;
+  color: #4b4848;
+  padding: 10px 15px;
+  font-size: 13px;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+.menu li a:hover {
+  background-color: #4b4848;
+  color: white;
+  border-radius: 5px;
+}
+.menu {
+  display: flex;
+  margin-left: 20px;
+}
+form{
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+textarea{
+   padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+select{
+   padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
