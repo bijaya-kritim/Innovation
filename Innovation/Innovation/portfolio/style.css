@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+section {
+    background: rgb(187, 173, 173);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+
+h2 {
+    color: #000000;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.projects:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s;
+    color: green;
+    background-color: rgb(185, 185, 106);
+}
+.about:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s;
+
+    background-color: rgb(185, 185, 106);
+
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+ .contact:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s;
+
+    background-color: rgb(185, 185, 106);
+ }
+ #form {
+    background-color: rgb(187, 173, 173);
+    /* padding: 20px; */
+    border-radius: 6px;
+ }
+#form:hover {
+    transform: scale(0.3s);
+}
+#form a {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    transition: transform 0.3s, color 0.3s;
+}
+#form a:hover{
+    transform: scale(1.2);
+    color: rgb(147, 12, 219);
+}
