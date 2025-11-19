@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Application Form</legend>
+
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your Name"><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="abajfjdfj@gmail.com"><br><br>
+
+            <label>Gender</label><br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female<br><br>
+
+            <label for="course">Select your course</label><br>
+            <select name="course" id="course">
+                <option value="bca">BCA</option>
+                <option value="bit">BIT</option>
+                <option value="csit">CSIT</option>
+                <option value="mbbs">MBBS</option>
+            </select><br><br>
+
+            <label>Conditions you must follow:</label><br>
+            <input type="checkbox" name="rules" value="time"> Arrive on time<br>
+            <input type="checkbox" name="rules" value="dress"> Proper dress code<br>
+            <input type="checkbox" name="rules" value="docs"> Submit all documents<br><br>
+
+            <label for="dob">Date of Birth</label><br>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <label for="month">Choose Month</label><br>
+            <input type="month" id="month" name="month"><br><br>
+
+            <label for="week">Choose Week</label><br>
+            <input type="week" id="week" name="week"><br><br>
+
+            <label for="time">Choose Time</label><br>
+            <input type="time" id="time" name="time"><br><br>
+
+            <label for="dt">Select Date & Time</label><br>
+            <input type="datetime-local" id="dt" name="dt"><br><br>
+
+            <label for="cv">Upload Your CV</label><br>
+            <input type="file" id="cv" name="cv"><br><br>
+
+            <label for="favcolor">Choose your favourite color</label><br>
+            <input type="color" id="favcolor" name="favcolor"><br><br>
+
+            <label for="range">Range of the archer</label><br>
+            <input type="range" id="range" name="range" min="0" max="10" value="6"><br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
