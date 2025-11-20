@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.main {
+    width: 100%;
+    background-image: url(imageforbg.avif);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    width: 200px;
+    height: 70px;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 12px;
+    margin-right: 30px;
+
+}
+
+.menu {
+    width: 400px;
+    height: 70px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: blue;
+}
+
+.search {
+    width: 200px;
+    margin-left: 200px;
+    display: flex;
+}
+
+.srch {
+    font-family: 'Times New Roman', Times, serif;
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgb(175, 171, 171);
+    border-right: none;
+    font-size: 16px;
+    background-color: rgb(194, 194, 194);
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    background: rgb(15, 32, 65);
+    color: rgb(209, 209, 209);
+    border: 1px solid rgb(175, 171, 171);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content {
+    color: white;
+    width: 1250px;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.content .head1 {
+    margin-top: 16%;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.content .para {
+    margin-top: 13px;
+    padding-left: 10px;
+    padding-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.btn2 {
+    padding-left: 5px;
+    background: #b93d24;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    height: 30px;
+    width: 160px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .btn2 {
+    text-decoration: none;
+    color: rgb(84, 12, 12);
+    transition: .3s ease;
+}
+
+.btn2:hover {
+    background-color: white;
+}
+
+/* .login {
+    width: 250px;
+    height: 300px;
+    margin-right: 50px;
+    /* background: transparent; */
+    /* background: #514e4e;
+    position: absolute;
+    top: -20px;
+    left: 890px;
+    border-radius: 10px;
+    padding: 25px;
+} */
+
+/* .login h2 {
+    font-family: Arial, Helvetica, sans-serif; */
+    /* width: 250px; */
+    /* text-align: center;
+    color: rgb(37, 20, 149);
+    font-size: 22px;
+    background-color: rgb(187, 183, 183);
+    margin: 2px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.login input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid blue;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* .login input:focus{
+    outline: none;
+} */
+
+/* .btn3{
+    width: 240px;
+    height: 40px;
+    background: transparent;
+    /* background: rgb(54, 34, 144); */
+    /* margin-top: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.4s ease;
+     border: none;
+}
+.btn3:hover{
+    background: rgb(38, 92, 21);
+}
+.btn3 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+   
+}   */
+/* 
+.login .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.login .link{
+    color: rgb(21, 58, 58);
+}
+
+.signup{
+    width: 240px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: rgb(160, 44, 44);
+    margin-top: 12px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.4s ease;
+     border: none;
+}
+
+.signup:hover{
+    background: rgb(38, 92, 21);
+    color: rgb(195, 214, 214);
+}
+
+.signup a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+   
+} */

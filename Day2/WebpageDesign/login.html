@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+  </head>
+
+  <style>
+.main {
+    width: 100%;
+    background-image: url(images\ \(4\).jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+    .login{
+        width: 20%;
+        padding: 16rem;
+    }
+    fieldset {
+        padding: 20px;
+        margin-left: 15rem;
+        width: 100%;
+    }
+
+    form{
+        padding: 20px;
+        margin: 20px;
+    }
+
+
+
+    .login input {
+      width: 100%;
+      height: 35px;
+      background: transparent;
+      border-bottom: 1px solid rgb(101, 101, 138);
+      border-top: none; 
+      border-right: none; 
+      border-left: none; 
+       color: white;
+      font-size: 15px;
+      margin-top: 30px;
+      letter-spacing: 1px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+
+
+    .btn3{
+    width: 240px;
+    height: 40px;
+    background: rgb(55, 29, 170);
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.4s ease;
+     border: none;
+}
+
+.btn3:hover{
+    background: rgb(38, 92, 21);
+}
+
+.btn3 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.signup{
+    width: 240px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: rgb(160, 44, 44);
+    margin-top: 12px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.4s ease;
+     border: none;
+}
+
+.signup:hover{
+    background: rgb(38, 92, 21);
+    color: rgb(195, 214, 214);
+}
+
+.signup a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+} 
+
+
+  </style>
+
+  <body>
+    <div class="main">
+
+   
+    <div class="login">
+      <fieldset>
+        <legend>Login Here</legend>
+        <form action="">
+          <input type="email" username="email" id="email" placeholder="Enter Email Here"/>
+          <br />
+          <input type="password" username="password" id="password" placeholder="Enter Password Here"/><br><br>
+
+          <div class="buttons">
+            <button class="btn3"><a href="#">LOG IN</a></button>
+            <p class="link"> Don't have an account ?
+            <button class="signup"><a href="./signup.html"> Sign Up</a> </button></p>
+
+          </div>
+        
+        </form>
+      </fieldset>
+    </div>
+     </div>
+  </body>
+</html>
