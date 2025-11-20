@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Log</title>
+
+  <style>
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .logbook {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    .page {
+      padding: 25px;
+      border-radius: 12px;
+      border: 2px solid #ccc;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .date-label {
+      font-weight: normal;
+      float: right;
+      font-size: 16px;
+    }
+
+    .field,
+    .movie-info .field {
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .field label {
+      font-weight: 600;
+      margin-right: 10px;
+    }
+
+    .field input {
+      flex: 1;
+      padding: 6px 10px;
+      border: 1px solid #aaa;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table th {
+      padding: 10px;
+      border: 1px solid #bbb;
+      font-size: 14px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    table td {
+      border: 1px solid #ccc;
+      padding: 6px;
+    }
+
+    table input {
+      width: 100%;
+      padding: 6px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .notes-section div {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .notes-section input {
+      width: 50%;
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: 1px solid #aaa;
+    }
+
+    .movie-results {
+      margin-top: 15px;
+    }
+
+    .movie-results .result {
+      margin: 8px 0;
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .movie-results span {
+      font-size: 20px;
+      letter-spacing: 3px;
+    }
+
+    .overall-notes textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #aaa;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .logbook {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="logbook">
+
+    <!-- Left Page -->
+    <div class="page left-page">
+      <h2>MOVIE: <span class="date-label">DATE WATCHED:</span></h2>
+
+      <div class="movie-info">
+        <div class="field"><label>MOVIE TITLE:</label> <input type="text"></div>
+        <div class="field"><label>GENRE:</label> <input type="text"></div>
+        <div class="field"><label>DURATION:</label> <input type="text"></div>
+        <div class="field"><label>DIRECTOR:</label> <input type="text"></div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>TIME</th>
+            <th>SCENE</th>
+            <th>CHARACTERS</th>
+            <th>NOTES</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+        </tbody>
+      </table>
+
+      <div class="notes-section">
+        <div><label>FAVORITE SCENE:</label> <input type="text"></div>
+        <div><label>MEMORABLE DIALOGUE:</label> <input type="text"></div>
+      </div>
+    </div>
+
+    <!-- Right Page -->
+    <div class="page right-page">
+      <h2>MOVIE DETAILS: <span class="date-label">DATE WATCHED:</span></h2>
+
+      <div class="movie-info">
+        <div class="field"><label>LEAD ACTOR(S):</label> <input type="text"></div>
+        <div class="field"><label>MOVIE ORIGIN:</label> <input type="text"></div>
+        <div class="field"><label>BACKGROUND MUSIC:</label> <input type="text"></div>
+        <div class="field"><label>VISUAL EFFECTS:</label> <input type="text"></div>
+        <div class="field"><label>REWATCH VALUE:</label> <input type="text"></div>
+      </div>
+
+      <div class="movie-results">
+        <div class="result"><label>STORYLINE:</label> <span>☆☆☆☆☆</span></div>
+        <div class="result"><label>ACTING:</label> <span>☆☆☆☆☆</span></div>
+        <div class="result"><label>CINEMATOGRAPHY:</label> <span>☆☆☆☆☆</span></div>
+        <div class="result"><label>MUSIC SCORE:</label> <span>☆☆☆☆☆</span></div>
+      </div>
+
+      <div class="overall-notes">
+        <label>OVERALL THOUGHTS:</label>
+        <textarea rows="6"></textarea>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
