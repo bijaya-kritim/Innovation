@@ -1,0 +1,50 @@
+ table, td, th{
+            border:1px solid black;
+            border-collapse:collapse;
+            table {
+    border-collapse: separate;   
+    border-spacing: 20px 8px;    
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 0 10px; 
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+
+   gap:20px
+}
+
+.left-table,
+.right-table {
+    display: inline-block;
+    vertical-align: top; 
+}
+
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.right-side {
+    margin-left: auto;   
+    margin-right: 0;
+}border-spacing: 20px 8px;    
+}
+body{
+    display: flex;
+    justify-content: space-around;
+}
+ 

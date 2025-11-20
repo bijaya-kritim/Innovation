@@ -1,72 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Log Book</title>
     <style>
         table, td, th{
-            border:1px solid black;
-            border-collapse:collapse;
-
+            border: 1px solid rgb(83, 80, 81);
+            border-collapse: collapse;
         }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <table>
-        
         <tr>
-            <td colsapn="6">Log Sheet</td>
+            <td colspan="6">LOG SHEET</td>
         </tr>
-        <tr>
-            <th>SN</th>
-            <th>Name</th>
-            <th>Check-In Time</th>
-            <th>Check-out Time</th>
-            <th>Task</th>
-            <th>Status</th>
-
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Ram</td>
-            <td input type="time"></td>
-             <td input type="time"></td>
-        </tr>
+      <tr>
+        <th>SN</th>
+        <th>Name</th>
+        <th>Check-In Time</th>
+        <th>Check-out Time</th>
+        <th>Tsks</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Hari</td>
+        <td><input type="time"></td>
+        <td><input type="time"></td>
+        <td rowspan="2">Table Formation</td>
+        <td><select>
+            <option value="">In Progress</option>
+            <option value="">Completed</option>
+            <option value="">Blocked</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td rowspan="2">2</td>
+        <td> </td>
         
+        <td>Ram</td>
+        <td><input type="time"></td>
+        <td><input type="time"></td>
+       
+        <td><select>
+            <option value="">In Progress</option>
+            <option value="">Completed</option>
+            <option value="">Blocked</option>
+        </select></td>
+      </tr>
+      <tr>
         
-
-        <tr> 
-            <td>1</td>
-            <td>Ram</td>
-            <td>10Pm</td>
-            <td>4pm</td>
-            <td>Api configuration</td>
-            <td>complete</td>
-                <td>Ram</td>
-            <td><input type="time"></td>
-            <td><input type="time"></td>
-
-           
-            <td>Api configuration</td>
-            <td>complete</td>
-        </tr>
-            <td>Ram</td>
-            <td><input type="time"></td>
-            <td><input type="time"></td>
-
-           
-            <td>Api configuration</td>
-            <td>complete</td>
-        <tr> 
-            <td>1</td>
-            <td>Ram</td>
-            <td>10Pm</td>
-            <td>4pm</td>
-            <td>Api configuration</td>
-            <td>complete</td>
-        </tr>
-        
+        <td>milla</td>
+        <td><input type="time"></td>
+        <td><input type="time"></td>
+        <td>Links and Lists</td>
+        <td><select>
+            <option value="">In Progress</option>
+            <option value="">Completed</option>
+            <option value="">Blocked</option>
+        </select></td>
+      </tr>
+      
     </table>
-</body>
+  </body>
 </html>
