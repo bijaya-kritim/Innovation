@@ -21,9 +21,10 @@ header {
 }
 
 header img {
-    width: 150px;
-    height: 150px;
+    width: 35vw;
+    max-width: 150px;
     border-radius: 50%;
+    height: auto;
     object-fit: cover;
     margin-top: 10px;
 }
@@ -59,6 +60,10 @@ nav ul li a:hover {
     text-align: center;
 }
 
+.section h2 {
+    font-size: 2rem;
+}
+
 /* CARDS */
 .card {
     background: white;
@@ -71,7 +76,7 @@ nav ul li a:hover {
 /* SKILLS GRID */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     gap: 15px;
     margin-top: 20px;
 }
@@ -87,7 +92,7 @@ nav ul li a:hover {
 /* PROJECT GRID */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin-top: 20px;
 }
@@ -116,4 +121,69 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 30px;
+}
+
+/* ---------------------- */
+/*    RESPONSIVE DESIGN   */
+/* ---------------------- */
+
+/* Tablets & small screens */
+@media (max-width: 768px) {
+
+    .section {
+        padding: 30px 15px;
+    }
+
+    .section h2 {
+        font-size: 1.7rem;
+    }
+
+    header img {
+        width: 40vw;
+        max-width: 140px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+
+    /* Stack navbar vertically */
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    /* Reduce section padding for small screens */
+    .section {
+        padding: 25px 10px;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Stack project cards */
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Smaller skills */
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    }
+
+    /* Image looks perfect on small screens */
+    header img {
+        width: 50vw;
+        max-width: 130px;
+    }
+
+    /* Better card spacing */
+    .card, .project-card {
+        padding: 15px;
+    }
 }
