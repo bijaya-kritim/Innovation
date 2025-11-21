@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .parent {
+            display: flex;
+            flex-direction: row;
+            gap: 5%;
+            justify-content: center;
+            flex-wrap: wrap;
+            background: red;
+        }
+
+        .child {
+            width: 20%;
+            height: 20%;
+            background: yellow;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 600px) {
+            .parent {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        img {
+            width: 10%;
+            height: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <img src="./360_F_807581880_bnBDnLia4j2Sts2nUYCD9ibzhYVfc2cm.webp" alt="">
+        <div class="child">home</div>
+        <div class="child">home</div>
+        <div class="child">home</div>
+        <div class="child">home</div>
+        <div class="child">home</div>
+
+    </div>
+</body>
+
+</html>

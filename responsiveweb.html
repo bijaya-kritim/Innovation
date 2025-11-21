@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 5em;
+            color: white;
+
+        }
+
+        .res1 a {
+            color: white;
+            margin: 1em;
+            text-decoration: none;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .porfileimg {
+            width: 2em;
+            height: 2em;
+            border-radius: 100%;
+            border: 1px solid white;
+        }
+
+        .introduction {
+            font-size: clamp(1rem, 5vw, 3rem);
+            text-align: center;
+            margin-top: 1em;
+        }
+
+        .mid {
+            font-size: clamp(1rem, 5vw, 3rem);
+            text-align: center;
+            margin-top: 1em;
+        }
+
+        .dis {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1.5em;
+            font-size: clamp(0.5rem, 1.5vw, 1rem);
+            text-align: center;
+            margin: 10em;
+        }
+
+        .img2 {
+            width: 18em;
+            height: auto;
+            border: 0.2em solid rgb(206, 206, 206);
+            border-radius: 100%;
+
+        }
+
+        .img3 {
+            width: 18em;
+            height: auto;
+            border: 0.2em solid rgb(206, 206, 206);
+            border-radius: 20%;
+
+        }
+
+        .header_container {
+            background-color: rgb(97, 97, 97);
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            border-radius: 1rem;
+            width: 50%;
+            position: fixed;
+
+        }
+
+        .skill {
+            font-size: clamp(1.5rem, 3vw, 5rem);
+            text-align: center;
+            margin-top: 1em;
+            margin: 2rem;
+        }
+
+        fieldset {
+            border-radius: 20px;
+        }
+
+        .introcontent {
+            max-width: 60%;
+        }
+
+        .midcontent {
+            max-width: 60%;
+        }
+
+        .skillbox {
+            width: auto;
+            height: auto;
+            color: black;
+            border-radius: 10px;
+
+        }
+
+        .skill2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            font-size: clamp(1.5rem, 1vw, 5rem);
+        }
+
+        .skillbox img {
+            width: 2em;
+            height: auto;
+        }
+
+        .language {
+            font-size: clamp(1.5rem, 3vw, 5rem);
+            text-align: center;
+            margin: 2rem;
+            margin-top: 2em;
+        }
+
+        .languagebox {
+            width: auto;
+            height: auto;
+            color: black;
+            border-radius: 10px;
+
+        }
+
+        .language2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            font-size: clamp(1.5rem, 1vw, 5rem);
+        }
+
+        .img001 {
+            width: 2em;
+            height: auto;
+        }
+
+        .img002 {
+            width: 1em;
+            height: auto;
+        }
+
+        .service {
+            font-size: clamp(1.5rem, 3vw, 5rem);
+            text-align: center;
+            margin-top: 1em;
+            margin: 2rem;
+        }
+
+        .contacthead {
+            font-size: clamp(1rem, 4vw, 3rem);
+            text-align: center;
+            margin-top: 4em;
+        }
+        .button0{
+            text-align: center;
+        }
+        .button1{
+            padding: 1em;
+            margin: 1em;
+            border-radius: 2em;
+            width: 10em;
+            background-color: black;
+            color: white;
+        }
+         .button2{
+            padding: 1em;
+            margin: 1em;
+            border-radius: 2em;
+            width: 10em;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+         .button3{
+            padding: 1em;
+            margin: 1em;
+            border-radius: 2em;
+            width: 10em;
+            background-color: rgb(131, 131, 131);
+            color: white;
+        }
+        .button1 a{
+text-decoration: none;
+color: white;
+        }
+        .button2 a{
+text-decoration: none;
+color: rgb(0, 0, 0);
+        }
+        .button3 a{
+text-decoration: none;
+color: white;
+        }
+        .margin-top{
+            margin-top: 5em;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 2em;
+            background: #858585;
+            color: white;
+            border-radius: 20px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            margin-top: 7em;
+
+        }
+        .footer a{
+            text-decoration: none;
+            color: white;
+        }
+        .footer img{
+             width: 2em;
+            height: auto;
+            margin-right: 1em;
+            margin-bottom: -1em;
+
+        }
+        .footerspace{
+            margin:1em;
+        }
+        .margin-top2{
+            margin-top: 1em;
+        }
+ 
+@media (max-width: 600px) {
+    .dis {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dis img {
+        width: 70%;
+        max-width: 250px;
+    }
+
+    .introcontent, .midcontent {
+        max-width: 90%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer div {
+        margin-bottom: 1em;
+        text-align: center;
+    }
+}
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header_container">
+            <div class="res1">
+                <a href="">Home</a>
+                <a href="">Contact</a>
+                <a href="">About</a>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="dis">
+            <div> <img class="img2" src="Practise/Diwash.jpg" alt="pic"></div>
+            <div class="introcontent">
+                <div class="introduction">
+                    DIWASH KARKI
+                </div>
+
+                <div>Motivated computer science
+                    student currently studying at
+                    Admin National College. Eager to
+                    gain practical experience through
+                    an internship in programming or
+                    web development. Possess
+                    foundational knowledge in C
+                    programming and web
+                    technologies, with a strong
+                    willingness to learn and contribute
+                    to real-world projects</div>
+
+            </div>
+        </div>
+        <div class="skill">
+            <fieldset>
+                <legend> SKILLS</legend>
+                <div class="skill2">
+                    <div class="skillbox">
+                        <img src="./Practise/monitor.png" alt="image">
+                        <div>Basic Computer Science</div>
+                    </div>
+                    <div class="skill2">
+                        <div class="skillbox">
+                            <img src="./Practise/coding.png" alt="image">
+                            <div>Basic C programming</div>
+                        </div>
+                    </div>
+                    <div class="skill2">
+                        <div class="skillbox">
+                            <img src="/Practise/worldwide.png" alt="image">
+                            <div>Basic Web Development</div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div>
+
+            <div class="dis">
+                <div class="midcontent">
+                    <div class="mid">
+                        MISSION
+                    </div>
+
+                    <div>My mission is to learn, grow, and build meaningful digital projects that improve my skills and
+                        help others. I strive to develop creativity and technical abilities by creating practical and
+                        impactful projects. My aim is to build clean, responsive, and user-friendly websites and craft
+                        engaging, accessible designs that solve real problems. I want to provide professional solutions
+                        that add value and exceed expectations, while continuously improving and contributing through
+                        quality work.</div>
+
+                </div>
+                <div> <img class="img3" src="Practise/goals_target_glyph_style.jpg" alt="pic"></div>
+            </div>
+        </div>
+        <div class="language">
+            <fieldset>
+                <legend> LANGUAGE</legend>
+                <div class="language2">
+                    <div class="languagebox">
+                        <img class="img002" src="./Practise/english-language.png" alt="image">
+                        <div>Advanced English</div>
+                    </div>
+                    <div class="language2">
+                        <div class="languagebox">
+                            <img class="img001" src="./Practise/pngegg.png" alt="image">
+                            <div>Native Nepali</div>
+                        </div>
+                    </div>
+                    <div class="language2">
+                        <div class="languagebox">
+                            <img class="img001" src="./Practise/pngwing.com.png" alt="image">
+                            <div>Fluent Hindi</div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div class="margin-top" id="contact">
+            <div class="contacthead">
+                LETS BUILD TOGETHER !
+            </div>
+            <div class="button0">
+                <button class="button1">
+                   <a href="">View CV</a> 
+                </button>
+                <button class="button2">
+                    <a href="">See Work</a>
+                </button>
+                <button class="button3">
+                    <a href="">Contact ME</a>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div>
+            2025 Diwash Karki. All rights reserved. <br>
+            Designed & Developed by Diwash Karki <div class="margin-top2"> <a href="#introduction">- About me</a>
+                <br>
+            <a href="#skills"> - Skills</a> <br>
+        <a href="#mission">- Mission</a> <br>
+    <a href="#language">- Langauge</a> <br>
+    <a href="#build">- Contact</a>
+</div>
+           
+        </div>
+        <div><div class="footerspace">
+            <img src="./Practise/facebook.png" alt=""><a href="">Facebook</a>
+            </div>
+            <div class="footerspace"><img src="./Practise/github.png" alt=""><a href="">GitHub</a></div>
+            
+            <div class="footerspace"> <img src="./Practise/email.png" alt=""><a href="">Gmail</a></div></div>
+        
+            
+        
+
+    </footer>
+</body>
+
+</html>
