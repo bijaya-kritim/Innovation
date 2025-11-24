@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Laptop Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <h2 class="logo">LaptopStore</h2>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html"> Cart</a></li>
+    </ul>
+</nav>
+
+
+<section class="product-page">
+    <img id="productImg" class="product-img">
+    <div class="product-info">
+        <h2 id="productTitle"></h2>
+        <p class="price" id="productPrice"></p>
+        <p id="productDescription"></p>
+        <button class="btn" id="addToCartBtn">Add to Cart</button>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
