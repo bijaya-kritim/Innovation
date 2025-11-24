@@ -105,10 +105,23 @@
             <input type="checkbox">
             <label for="verify">I accept that this data are true and valid</label>
             <br><br>
-            <input type="submit" class="button1" value="Book Appointment">
-            <input type="reset" class="button2" value="Reset">
+            <input type="submit" class="button1" id="submit" value="Book Appointment">
+            <input type="reset" class="button2"  id="reset" value="Reset">
         </fieldset>
     </form>
+    <script>
+        const submit1 = document.getElementById("submit")
+        submit1.addEventListener("click",function()
+    {
+        alert("Submitted")
+    })
+     const reset1 = document.getElementById("reset")
+        reset1.addEventListener("click",function()
+    {
+        alert("resetted")
+    })
+
+    </script>
 </body>
 
 </html>

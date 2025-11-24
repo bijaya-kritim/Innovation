@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 2</title>
+    <style>
+        .box{
+            background-color: black;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 20px;
+
+        }
+        .flex{
+           
+            display: flex;
+             justify-content: space-evenly;
+             
+            
+        }
+        
+        .button{
+            background-color: white;
+            padding: 1em;
+            border-radius: 20px;
+            justify-content: center;
+            width: 15em;
+            margin-bottom: 20px;
+            margin-left: 10px;
+
+
+        }
+        .fieldset{
+            max-width: 60%;
+            max-height: 50%;
+        }
+    </style>
+</head>
+<body class="flex">
+    <div class="fieldset"> <div class="button0"> <button class="button" id="button1">Green Color</button>
+    <button class="button" id="button2">Red Color</button>
+    <button class="button" id="button3">Black Color</button>
+    <button class="button" id="button4">Yellow Color</button>
+    <button class="button" id="button8">orange Color</button>
+    <button class="button" id="button5">Increase Size</button>
+    <button class="button" id="button6">Decrease Size</button>
+    <button class="button" id="button7">Hide/unhide</button>
+    </div></div>
+   
+      <div id="box" class="box"></div>
+   
+    <script>
+        const boxes = document.getElementById("box")
+        const but1 = document.getElementById("button1")
+        but1.addEventListener("click",function()
+    {
+         boxes.style.backgroundColor = "green"
+    })
+       const but8 = document.getElementById("button8")
+        but8.addEventListener("click",function()
+    {
+         boxes.style.backgroundColor = "orange"
+    })
+    const but2 = document.getElementById("button2")
+        but2.addEventListener("click",function()
+    {
+         boxes.style.backgroundColor = "red"
+    })
+    const but3 = document.getElementById("button3")
+        but3.addEventListener("click",function()
+    {
+         boxes.style.backgroundColor = "black"
+    })
+    const but4 = document.getElementById("button4")
+        but4.addEventListener("click",function()
+    {
+         boxes.style.backgroundColor = "Yellow"
+    })
+    const but5 = document.getElementById("button5")
+        but5.addEventListener("click",function()
+    {
+         let currentWidth = boxes.offsetWidth; 
+        let currentHeight = boxes.offsetHeight; 
+        boxes.style.width = (currentWidth + 20) + "px";
+        boxes.style.height = (currentHeight + 20) + "px";
+    })
+    const but6 = document.getElementById("button6")
+        but6.addEventListener("click",function()
+    {
+        let currentWidth = boxes.offsetWidth;
+        let currentHeight = boxes.offsetHeight;
+        
+        
+        let newWidth = Math.max(currentWidth - 20, 20);
+        let newHeight = Math.max(currentHeight - 20, 20);
+
+        boxes.style.width = newWidth + "px";
+        boxes.style.height = newHeight + "px";
+         
+    })
+    const but7 = document.getElementById("button7")
+        but7.addEventListener("click",function()
+    {
+         
+        if (boxes.style.display === "none") {
+            
+            boxes.style.display = "block";
+        } else {
+            
+            boxes.style.display = "none";
+        }
+    })
+    
+    </script>
+
+</body>
+</html>
