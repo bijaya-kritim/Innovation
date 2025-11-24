@@ -1,11 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+ background-image: url(./neve-fse-img12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 header {
   background-color: white;
@@ -13,22 +16,25 @@ header {
   width: 100%;
   height: 70px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-.navbar{
+.navbar1{
   position:sticky;
   top:0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;   
 }
-.logo {
+.logo1 {
   font-size: 18px;
   font-weight: 800;
 }
-.menu ul {
+.menu1 ul {
   list-style: none;
   display: flex;
 }
-.menu li a {
+.menu1 li a {
   text-decoration: none;
   color: #4b4848;
   padding: 10px 15px;
@@ -36,56 +42,95 @@ header {
   font-weight: bold;
   transition: 0.5s ease;
 }
-.menu li a:hover {
+.menu1 li a:hover {
   background-color: #4b4848;
   color: white;
   border-radius: 5px;
 }
-.menu {
+.menu1 {
   display: flex;
   margin-left: 20px;
 }
+.menu1 li a:hover {
+  background-color: #484b49;
+  color: white;
+  border-radius: 3px;
+}
+
+.menu1 {
+  display: flex;
+  margin-left: 20px;
+}
+.menu2{
+  display: none;
+}
+.logo2{
+  display: none;
+}
+.burger{
+  display: none;
+  font-size: 24px;
+}
+.navbar2{
+  width: 100%;
+}
+        
+
+
 .container {
   background-image: url(./neve-fse-img12.jpg);
   background-size: cover;
   background-position: center;
-  height: 70vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 100px;
   text-align: center;
-}
-h1 {
-  font-size: 60px;
+  img{
+    width:100%;
+    height: 200px;
+    
+  }
+  h1 {
+  font-size: 50px;
   margin-bottom: 20px;
 }
 p {
-  font-size: 15px;
+  font-size: 30px;
   font-weight: 8px;
   margin-bottom: 20px;
 }
-.button {
+}
+  h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.buttons{
   display: flex;
   gap: 20px;
-  margin:20px;
+  margin:80px;
+  height: 40px;
+  flex-wrap: wrap;
+  
 }
-.button1 {
-  background-color: rgb(69, 87, 255);
-  padding: 10px 20px;
-  border-radius: 3px;
+button {
+  background-color: #325ce8;
+  padding: 20px 30px;
+  border-radius: 5px;
   color: white;
+  flex-wrap: wrap;
   text-decoration: none;
   transition: 0.5s ease;
+  font-size: large;
+  border-style: none;
 }
-.button2 {
-  button {
-    border-radius: 3px;
-    border-color: rgb(87, 87, 91);
-    text-decoration: none;
-    background-color: aliceblue;
-    padding: 10px 20px;
-  }
+
+.button2{
+    padding: 18px 30px;
+    border: black;
+   font-size: large;
+   border-style: outset;
+   border-radius: 5px;
 }
 .buttom {
   display: flex;
@@ -95,7 +140,7 @@ p {
   gap: 200px;
   
   i{
-    background-color:  rgb(69, 87, 255) ;
+    background-color: #325ce8 ;
     padding:20px;
     border-radius:5px;
     color: white;
@@ -117,11 +162,235 @@ width: 300px;
 
 }
 .card2{
-width: 300px;
+width: 500px;
+img{
+  border-radius: 50%;
+}
+}
+.card{
+  display: flex;
+  margin: 50px;
+gap:50px;
 
 }
-.card3{
-width: 300px;
+.lean{
+  display: flex;
+  gap: 50px;
+  margin: 50px;
+  p{
+    font-size: large;
+  }
+  img{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+.leantext{
+  margin-top: 80px;
+ 
+}
+.learn{
+padding: 20px;
+}
 
+.variation{
+   display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  background-color: #f7f7f3;
+  p{
+    font-size: large;
+  }
+  img{
+    margin-right: 80px;
+    margin: 50px;
+  }
+}
+.variationtext{
+  margin: 100px;
+ margin-left: 140px;
+}
+.pattern{
+  display: flex;
+  gap: 50px;
+  background-color: black;
+  p{
+    font-size: large;
+  }
+  img{
+    margin-left: 100px;
+    margin: 50px;
+  }
+}
+.patterntext{
+  margin-top: 200px;
+ color:#ffffff;
+}
+.patterns{
+padding: 20px;
+}
+.feature{
+  position: relative;
+  justify-content: center;
+  background-color: #fbfbfb;
+  img{
+      margin: 50px;
+    padding-right: 50px;
+  };
+
+  h1{
+    padding-top: 50px;
+    padding-left: 80px;
+  }
+}
+h4{
+  position: relative;
+  text-align: end;
+}
+.foot{
+  color: #ffffff;
+  background-color: black;
+  padding: 100px;
+  text-align: center;
+  img{
+    width:100%;
+    height: 200px;
+    
+  }
+  h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 30px;
+  font-weight: 8px;
+  margin-bottom: 20px;
+}
+}
+.icons{
+ i{
+  margin:20px;
+  padding:10px ;
+  font-size: 30px;
+ }
+}
+
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    display: flex;
+  }
+  .navbar1{
+    display: none;
+  }
+  .menu2 {
+    display: block;
+    text-align: center;
+  
+  }
+.menu2 ul{
+  color: white;
+    list-style: none;
+}
+.menu2 li{
+  padding: 8px;
+  width: 100%;
+}
+  .menu2 ul a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px 15px;
+  }
+   .menu2 ul a:hover{
+    color: #494646;
+    text-decoration: none;
+    background-color: #ffffff;
+  }
+  .navbar2{
+    background-color: #4b4848;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+  }
+  .menu1 {
+    display: none;
+  }
+  .logo2{
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .container {
+    padding: 40px 20px;
+  }
+  .container h1 {
+    font-size: 28px;
+  }
+  .container p {
+    font-size: 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .lean, .variation, .pattern {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .buttom {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 36px;
+  }
+  .container p {
+    font-size: 20px;
+  }
+
+  .card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .variation, .pattern {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Small laptops */
+@media (max-width: 1024px) {
+  .container {
+    padding: 60px;
+  }
+  .card {
+    gap: 30px;
+  }
 }
 

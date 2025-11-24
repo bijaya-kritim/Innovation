@@ -3,8 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
   font-family: "Poppins", sans-serif;
+ background-image: url(./neve-fse-img12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 header {
   background-color: white;
@@ -12,22 +16,25 @@ header {
   width: 100%;
   height: 70px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-.navbar{
+.navbar1{
   position:sticky;
   top:0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+   align-items: center;                                                   
 }
-.logo {
+.logo1 {
   font-size: 18px;
   font-weight: 800;
 }
-.menu ul {
+.menu1 ul {
   list-style: none;
   display: flex;
 }
-.menu li a {
+.menu1 li a {
   text-decoration: none;
   color: #4b4848;
   padding: 10px 15px;
@@ -35,14 +42,37 @@ header {
   font-weight: bold;
   transition: 0.5s ease;
 }
-.menu li a:hover {
-  background-color: #484b49;
+.menu1 li a:hover {
+  background-color: #4b4848;
   color: white;
   border-radius: 5px;
 }
-.menu {
+.menu1 {
   display: flex;
   margin-left: 20px;
+}
+.menu1 li a:hover {
+  background-color: #484b49;
+  color: white;
+  border-radius: 3px;
+}
+
+.menu1 {
+  display: flex;
+  margin-left: 20px;
+}
+.menu2{
+  display: none;
+}
+.logo2{
+  display: none;
+}
+.burger{
+  display: none;
+  font-size: 24px;
+}
+.navbar2{
+  width: 100%;
 }
 h1{
     text-align: center;
@@ -84,4 +114,58 @@ button{
     font-size: 16px;
     cursor: pointer;  
 }
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    display: flex;
+  }
+  .navbar1{
+    display: none;
+  }
+  .menu2 {
+    display: block;
+    text-align: center;
+  
+  }
+.menu2 ul{
+  color: white;
+    list-style: none;
+}
+.menu2 li{
+  padding: 8px;
+  width: 100%;
+}
+  .menu2 ul a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px 15px;
+  }
+   .menu2 ul a:hover{
+    color: #494646;
+    text-decoration: none;
+    background-color: #ffffff;
+  }
+  .navbar2{
+    background-color: #4b4848;
+    display: flex;
+    flex-direction: column;
+text-align: center;
+   
+    color: #ffffff;
+  }
+  .menu1 {
+    display: none;
+  }
+  .logo2{
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+    }}
 

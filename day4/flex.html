@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p{
+        background-color: lime;
+        
+    }
+    span{
+        background-color: orange;
+    }
+    .parent{
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        background-color: blanchedalmond;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .child{
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 20%;
+        flex: 1 1 20%;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        position: fixed;
+    }
+
+    @media (max-width: 600px){
+        .parent{
+            background-color: rgb(10, 158, 160);
+            flex-direction: column;
+        }
+        
+    }
+</style>
+<body>
+    <p>hello</p>
+    <span>hi</span>
+    <div class="parent">
+        <img src="./../day1/pexels-asphotography-212372.jpg" alt="">
+        <div class="child"><p>item</p></div>
+        <div class="child"><p>item</p></div>
+        <div class="child"><p>item</p></div>
+        <div class="child"><p>item</p></div>
+        <div class="child"><p>item</p></div>
+        <div class="child"><p>item</p></div>
+    </div>
+</body>
+</html>
