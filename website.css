@@ -1,0 +1,202 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+  background: #bb5e29;
+  padding: 20px 40px;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  color: #ffe2bf;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 140px 40px 60px;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  color: #402313;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.btn {
+  background: #8a5228;
+  padding: 12px 24px;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #b06a37;
+}
+
+
+.about-img {
+  width: 360px;
+  border-radius: 12px;
+}
+
+.menu {
+  background: #f8f4f0;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.menu h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #402313;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.item {
+  background: #e7c8a4;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.about {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.about-img {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+.contact {
+  background: #2b1b12;
+  padding: 60px 40px;
+  color: white;
+  text-align: center;
+}
+
+
+footer {
+  background: #1a100b;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.8rem;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  header {
+    padding: 15px 20px;
+  }
+
+ 
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .hero {
+    padding-top: 160px;
+    flex-direction: column;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-img {
+    width: 100%;
+  }
+
+  .menu-items {
+    grid-template-columns: 1fr;
+  }
+}
+
+

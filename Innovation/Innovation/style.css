@@ -8,6 +8,8 @@ body {
   background: #f4f4f4;
   color: #333;
 }
+
+
 #profile {
   background-color: #ffffff;
   padding: 2rem;
@@ -63,20 +65,52 @@ nav a {
   text-decoration: none;
 }
 
+
 section {
   padding: 2rem;
   background: rgb(200, 186, 186);
   margin: 1rem auto;
   max-width: 800px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
+
 
 .project {
   background: #b1a7a7;
-  padding: 1rem;
-  margin-top: 1rem;
+  padding: 2rem;
   border-radius: 4px;
 }
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+}
+
+input,
+textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.8rem;
+  border: none;
+  background: #222;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #444;
+}
+
 
 footer {
   text-align: center;
@@ -84,3 +118,54 @@ footer {
   background: #333;
   color: #fff;
 }
+
+
+@media (max-width: 900px) {
+  #profile {
+    padding: 1.5rem;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-info {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  header {
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  #profile {
+    padding: 1.2rem;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  .project {
+    padding: 1.5rem;
+  }
+
+  form {
+    width: 95%;
+  }
+}
+
+
