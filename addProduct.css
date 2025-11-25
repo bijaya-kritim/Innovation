@@ -28,8 +28,6 @@ body{
     justify-content: space-between;
     align-items: center;
 
-
-
 }
 .addPro{
     height: 50px;
@@ -155,6 +153,9 @@ span{
     border-radius: 10px;
     
 }
+.shopImage img{
+    height: 400px; width:440px; border-radius: 20px; border: 5px solid white;
+}
 
 .addHeading{
     position: relative;
@@ -163,4 +164,197 @@ span{
 }
 .subImage p{
     color: #5b5a5a;
+}
+@media(max-width:400px){
+    .leftProduct{
+    height: 100vh;
+    width:300px;
+    left: 50px;
+    position: relative;
+
+
+}
+.rightProduct{
+ height:100vh;
+ width:300px;
+ position: relative;
+ right: 80px;
+ top:300px;
+ 
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items: center;
+}
+.secProduct{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.addPro{
+    height: 50px;
+    width:230px;
+    position:relative;
+    top:30px;
+    text-align: center;
+   
+   
+}
+.addPro i{
+ color: #dd695d;
+ font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.newForm{
+    position: relative;
+  top: 80px;
+  right:50px;
+    background: #ffecec;
+    padding: 20px;
+    max-width: 600px;
+    height:120vh;
+    width:240px;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    height: 8px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    margin-left: 13px;
+    font-size: 17px;
+    color: rgb(92, 91, 91);
+}
+.arr{
+    position: relative;
+    top:15px
+}
+
+.checkbox-group {
+    margin-bottom: 20px;
+    height: 200px;
+    width:500px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+
+    
+}
+.bouq{
+    height:150px;
+    width:180px;
+    margin-bottom: 10px;
+    
+    padding: 20px;
+
+}
+.newArrangement{
+    display:none;
+}
+  
+
+button {
+    width: 90%;
+    padding: 12px;
+    margin-left:10px;
+    background: #dd695d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+button:hover {
+    background: #2da73e;
+}
+.fImage{
+    height: 20px;
+    margin-top: 160px;
+    color: ;
+}
+input{
+    height: 40px;
+}
+.lab{
+    font-size: large;
+    font-weight: 800;
+    color: #5b5a5a;
+}
+span{
+    height:10px;
+    position: relative;
+    bottom:15px;
+    left:5px;
+    color: #5b5a5a;
+}
+
+.shopInformation{
+    height: 150px;
+    width:260px;
+    background-color: rgb(240, 245, 245);
+    display: flex;
+   padding: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top:70px;
+    left:85px;
+    border-radius: 30px;
+}
+.subImage{
+    height: 270px;
+    width: 280px;
+    display: flex;
+   gap:12px;
+    position: relative;
+    top:40px;
+    left:80px;
+    border-radius: 10px;
+    
+    justify-content: center;
+    align-items: center;
+    background: #fef2f2;
+}
+.sub{
+    
+    height: 160px;
+    width:120px;
+    border-radius: 10px;
+    
+}
+
+.addHeading{
+    position: relative;
+    bottom:40px;
+    left:35px;
+}
+.subImage p{
+    color: #5b5a5a;
+}
+.shopImage{
+    position: relative;
+    top:20px;
+    left:75px;
+    width:280px;
+    height: 400px;
+}
+.shopImage img{
+   width:100%;
+   height: 100%;
+} 
+.shopInformation li{
+    font-size: 13px;
+}
+.sub1 p{
+    font-size: 13px;
+}
+
 }

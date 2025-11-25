@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;
+            gap:5%;
+            justify-content: space-around;
+            background-color: rgb(133, 146, 170);
+            flex-wrap: wrap;
+            
+
+        }
+        .child{
+            /* flex-shrink: 1; 1 is true 0 is false squeeze in */
+            flex-shrink: 1;
+            flex-grow: 1;
+            flex:1 1 auto; /* shrink grow basis*/
+        }
+        img{
+            height: 80px;
+            width:80px;
+            border-radius: 50%;
+        }
+        @media(max-width:700px){
+            .parent{
+                background-color: rgb(134, 90, 90);
+                flex-direction: column;
+
+                
+            }
+
+        }
+       
+
+    </style>
+</head>
+<body>
+    <!-- span inline
+    block  h1 parah -->
+    <div class="parent">
+      <img src="./images/new pfp.avif" alt="">
+        <div class="chaild"><p>Link</p></div>
+        <div class="chaild"><p>Link</p></div>
+        <div class="chaild"><p>Link</p></div>
+        <div class="chaild"><p>Link</p></div>
+        <div class="chaild"><p>Link</p></div>
+        <div class="chaild"><p>Link</p></div>
+        <div class="chaild"><p>Link</p></div>
+    </div>
+
+
+</body>
+</html>

@@ -17,6 +17,14 @@ body{
 
     
 }
+@mediaquery(max-width:400px){
+
+
+
+
+
+
+}
 
 .first{
     color: #dd695d;
@@ -33,6 +41,7 @@ body{
     height: 50px;
     align-items: center;
     display: flex;
+    
     background-color:rgb(233, 232, 230);
    
     
@@ -54,9 +63,10 @@ body{
     display:flex;
     list-style: none;
     align-items: center;
-    width: 120vh;
+    width:120vh;
     margin-left: 160px;
     justify-content: space-around;
+    
     
 
 }
@@ -209,5 +219,164 @@ a:hover::after {
     font-size: 12px;
     padding: 5px 10px;
     border-radius: 3px;
+}
+.resProduct{
+    display:none;
+}
+@media(max-width:400px){
+   
+ .navbar{
+  display:flex;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+
+ }
+ .navigate ul{
+  
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    flex-direction: column;
+    height: 120px;
+    position: relative;
+    right: 7%;
+    justify-content: center;
+    gap: 5px;
+    
+ }
+  .navigate ul li{
+    font-size: 0.8rem;
+    
+    
+  }
+ .cartTitle, .icon{
+    display:none;
+ }
+.nav_logo{
+    position: relative;
+    left:30%;
+}
+.content-img{
+    background-image: url(./images/Tulips_1600x.webp);
+    height: 60vh;
+    width:20rem;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+ .hero-text {
+   position:relative;
+   bottom:22%;
+   right: 22%;
+    width: 240px;
+    
+   
+}
+
+.hero-text h1 {
+    font-size: 21px;
+    line-height: 1.2;
+}
+
+.highlight {
+    color: #dd695d;
+}
+
+.hero-text p {
+    margin-top: 20px;
+    font-size: 10px;
+    color: #666;
+    width: 80%;
+}
+
+.signature {
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: cursive;
+    color: #e67e22;
+}
+.categories {
+    position: relative;
+    bottom:16%;
+    right: 16%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+}
+.resProduct{
+  display:block;
+}
+
+.filter {
+    display: none;
+    
+    cursor: pointer;
+}
+.products {
+    position: relative;
+    bottom: 17%;
+    right:13%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.product {
+    width:130px;
+    height: 200px;
+    position: relative;
+
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.product img {
+    height:140px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+.product h3{
+    font-size: 0.9rem;
+    width: auto;
+    padding: 10px;
+    color:#4b4a4a;
+}
+
+footer{
+    position: absolute;
+    top:200%;
+}
+.resLink{
+    display: none;
+}
+.ft_container{
+   width: 250px;
+    display: flex;
+    gap:5px;
+}
+
+
+
+.link {
+    height: 10px;
+}
+
+
+.secout{
+    position: absolute;
+    top:54%;
+}
+#footer{
+    position: absolute;
+    top:240%
+}
+
+
+    
 }
 

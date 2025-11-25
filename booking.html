@@ -83,7 +83,7 @@
         <textarea placeholder="Message/Suggestions"></textarea>
         </div>
 
-        <button type="submit">Book Appointment</button>
+        <button type="submit" id="btn">Book Appointment</button>
 
     </form>
 
@@ -93,6 +93,11 @@
 
 
 
-
+<script>
+  const button = document.getElementById("btn")
+  button.addEventListener("click",()=>{
+    alert("Your appointment has been booked")
+  })
+</script>
 </body>
 </html>
