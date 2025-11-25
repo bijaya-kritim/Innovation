@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM </title>
+    <title>dom</title>
     <style>
         .box{
-            background-color:violet;
+            background-color:aqua;
             width: 10rem;
             height: 10rem;
             border-radius: 20px;
@@ -21,32 +21,25 @@
         }
         
         .button{
-            background-color:white;
+            background-color: white;
             padding: 1em;
             border-radius: 20px;
             justify-content: center;
-            width: 15em;
-            margin-bottom: 20px;
-            margin-left: 10px;
-
 
         }
-        .fieldset{
-            max-width: 60%;
-            max-height: 50%;
-        }
+        
     </style>
 </head>
 <body class="flex">
-    <div class="fieldset"> <div class="button0"> <button class="button" id="button1">Green Color</button>
+    <fieldset> <div class="button0">
+     <button class="button" id="button1">pink Color</button>
     <button class="button" id="button2">Red Color</button>
-    <button class="button" id="button3">Black Color</button>
     <button class="button" id="button4">Yellow Color</button>
-    <button class="button" id="button8">orange Color</button>
     <button class="button" id="button5">Increase Size</button>
     <button class="button" id="button6">Decrease Size</button>
-   
-    </div></div>
+    <button class="button" id="button7">visible/non-visible</button>
+    
+    </div></fieldset>
    
       <div id="box" class="box"></div>
    
@@ -55,23 +48,14 @@
         const but1 = document.getElementById("button1")
         but1.addEventListener("click",function()
     {
-         boxes.style.backgroundColor = "green"
-    })
-       const but8 = document.getElementById("button8")
-        but8.addEventListener("click",function()
-    {
-         boxes.style.backgroundColor = "orange"
+         boxes.style.backgroundColor = "pink"
     })
     const but2 = document.getElementById("button2")
         but2.addEventListener("click",function()
     {
          boxes.style.backgroundColor = "red"
     })
-    const but3 = document.getElementById("button3")
-        but3.addEventListener("click",function()
-    {
-         boxes.style.backgroundColor = "black"
-    })
+    
     const but4 = document.getElementById("button4")
         but4.addEventListener("click",function()
     {
