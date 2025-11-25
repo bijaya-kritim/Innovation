@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation </title>
+  </head>
+  <body style="font-family: Arial ; padding: 20px;">     
+  <div style="margin-bottom: 20px;">
+    <div id="mainBox"
+      style="
+        width: 200px;
+        height: 150px;
+        background: black;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      ">
+    </div>
+  </div>
+
+  <!-- color changing button -->
+  <h3>Change Color</h3>
+  <button id="redBtn" style="padding: 10px; background: red; color: white; border: none; margin: 5px;">Red</button>
+  <button id="greenBtn" style="padding: 10px; background: green; color: white; border: none; margin: 5px;">Green</button>
+  <button id="yellowBtn" style="padding: 10px; background: goldenrod; color: white; border: none; margin: 5px;">Yellow</button>
+
+  <!-- <hr> makes horizontal line -->
+  <hr>
+ 
+  <!-- visible invisible button -->
+  <h3>Visibility</h3>
+  <button id="visibleBtn" style="padding: 10px; margin: 5px;">Visible</button>
+  <button id="invisibleBtn" style="padding: 10px; margin: 5px;">Invisible</button>
+
+  <hr>
+
+  <!-- size increase and decrease in width and height  -->
+  <h3>Resize Box</h3>
+  <button id="increaseBtn" style="padding: 10px; margin: 5px;">Increase Size</button>
+  <button id="decreaseBtn" style="padding: 10px; margin: 5px;">Decrease Size</button>
+
+
+
+
+  <script>
+
+    const mainBox = document.getElementById("mainBox");
+
+    document.getElementById("redBtn").addEventListener("click", () => {
+      mainBox.style.backgroundColor = "red";
+    });
+
+    document.getElementById("greenBtn").addEventListener("click", () => {
+      mainBox.style.backgroundColor = "green";
+    });
+
+    document.getElementById("yellowBtn").addEventListener("click", () => {
+      mainBox.style.backgroundColor = "yellow";
+    });
+
+    document.getElementById("visibleBtn").addEventListener("click", () => {
+      mainBox.style.display = "block";
+    });
+
+    document.getElementById("invisibleBtn").addEventListener("click", () => {
+      mainBox.style.display = "none";
+    });
+
+    document.getElementById("increaseBtn").addEventListener("click", () => {
+      // offsetWidth and offsetHeight le xai mainbox ko original width ra height patta lauxa
+      let w = mainBox.offsetWidth;
+      let h = mainBox.offsetHeight;
+
+      mainBox.style.width = w + 20 + "px";
+      mainBox.style.height = h + 20 + "px";
+    });
+
+    document.getElementById("decreaseBtn").addEventListener("click", () => {
+      let w = mainBox.offsetWidth;
+      let h = mainBox.offsetHeight;
+
+      // mainbox ko width and height lessthan 60 px xa bane not decrease natra -20px le decrease garaune
+      if (w > 60 && h > 60) {
+        mainBox.style.width = w - 20 + "px";
+        mainBox.style.height = h - 20 + "px";
+      }
+    });
+
+  </script>
+  </body>
+</html>
