@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        .img{
+            width: 10rem;
+            height: 10rem;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><Input:btn></Input:btn>Index</h1>
+    <div id="array1"></div>
+
+    <h1>Multiplication</h1>
+    <div id="Multiplication"></div>
+
+     <h1> IMAGES</h1>
+
+    <div id="array">
+        <img id= "0"src="" alt="" class="img">
+        <img id= "1"src="" alt="" class="img">
+        <img id= "2"src="" alt="" class="img">
+        <img id= "3"src="" alt="" class="img">
+        <img id= "4"src="" alt="" class="img">
+        <img id= "5"src="" alt="" class="img">
+    </div>
+    <script>
+        const arr = [
+            1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+        ]
+        console.log(arr)
+        for (var i = 0; i < 10; i++) {
+            console.log(i + ":" + arr[i])
+        }
+        console.log("------------Index-------------------")
+        for (var i = 1; i <= 10; i++) {
+            console.log(i + ":" + arr[i - 1])
+        }
+        console.log("--------------Multiplication Table-----------")
+        for (var i = 1; i <= 10; i++) {
+            console.log(2 + "*" + i + "=" + 2 * i)
+        }
+
+        console.log("-----------------DATA-------------------")
+        const user = [
+            { "Username": "sukute", "user-email": "sukute@gmail.com", image: "https://imgs.search.brave.com/98iAqFQu5_ixzIms9nnOi2CZLhA5eDkyekT62JuIH5A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wbGF5/LWxoLmdvb2dsZXVz/ZXJjb250ZW50LmNv/bS90ekFTVmdRRXBD/bEw4NzNUWno4am1M/MnpjYXhIYkdkTVJY/NnNEZnMxMGpGTlJQ/LUFBYjZlRTNPd3d6/UmlGUzg5elZwcT13/NTI2LWgyOTYtcnc" },
+            { "Username": "Seerish", "user-email": "seerish@gmail.com", image: "https://imgs.search.brave.com/iRjhiAuRJt-LANYbfN3CPn3XiGulpPGSazcul96O1vQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtY3NlLmNhbnZh/LmNvbS9ibG9iLzEy/MTg2NTUvZmVhdHVy/ZV9TdG9ja0ltYWdl/c19sZWFkXzAzMngu/anBn" },
+            { "Username": "rumal", "user-email": "rumal@gmail.com", image: "https://imgs.search.brave.com/Mkz_P_cuyR6AqAPbLGdwe_gp1KD8KSOBSQaAs0zP_aQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4t/ZnJvbnQuZnJlZXBp/ay5jb20vaW1hZ2Vz/L2FpL2ltYWdlLWdl/bmVyYXRvci9jb3Zl/ci9pbWFnZS1nZW5l/cmF0b3ItaGVhZGVy/LndlYnA_dz0zODQw/Jmg9MTkyMCZxPTkw/JTIwMzg0MHcsJTIw/aHR0cHM6Ly9jZG4t/ZnJvbnQuZnJlZXBp/ay5jb20vaW1hZ2Vz/L2FpL2ltYWdlLWdl/bmVyYXRvci9jb3Zl/ci9pbWFnZS1nZW5l/cmF0b3ItaGVhZGVy/LndlYnA_dz03Njgw/Jmg9Mzg0MCZxPTkw/JTIwNzY4MHc" },
+            { "Username": "Bindi ", "user-email": "bindi@gmail.com", image: "https://imgs.search.brave.com/ph3CUhZjOU0uMo2NFbWUp6cUQPVn40Dm9T1OFQ346AA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vcGljanVt/Ym8uY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy9taW5pbWFsaXN0/LWhlYWRlci1waG90/by13aXRoLXdvbWFu/LXdpdGgtY2xvc2Vk/LWV5ZXMtZnJlZS1p/bWFnZS5qcGVnP3c9/NjAwJnF1YWxpdHk9/ODA" },
+            { "Username": "kricks", "user-email": "kricks@gmail.com", image: "https://imgs.search.brave.com/1sIXBsvcVhri_aDSOknSa1AAn_EOTRILUY-fkc4llkQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9uZXh0/LWltYWdlcy4xMjNy/Zi5jb20vaW5kZXgv/X25leHQvaW1hZ2Uv/P3VybD1odHRwczov/L2Fzc2V0cy1jZG4u/MTIzcmYuY29tL2lu/ZGV4L3N0YXRpYy9h/c3NldHMvYWxsLWlu/LW9uZS1wbGFuL3N1/cnJlYWwtZmFjZXMt/YWkucG5nJnc9Mzg0/MCZxPTc1" },
+            { "Username": "kale", "user-email": "kale@gmail.com", image: "https://imgs.search.brave.com/Mw94U2xcdrEWyEsnGckdCrhFsvsjFM1mc9jeqlE7MQE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4t/ZnJvbnQuZnJlZXBp/ay5jb20vaW1hZ2Vz/L3Rvb2xzL3YyL3Nr/ZXRjaC53ZWJwP3c9/Mzg0MCZoPTE5MjAm/cT03NSUyMDM4NDB3/LCUyMGh0dHBzOi8v/Y2RuLWZyb250LmZy/ZWVwaWsuY29tL2lt/YWdlcy90b29scy92/Mi9za2V0Y2gud2Vi/cD93PTc2ODAmaD0z/ODQwJnE9OTAlMjA3/Njgwdw" }
+        ]
+        user.map((users,index) => {
+            console.log(users);
+            var img = document.getElementById(index)
+            img.src = users.image
+
+            }
+        )
+        const output = document.getElementById("output");
+
+        function print(text) {
+            output.innerHTML += text + "<br>";
+        }
+
+        const mulDiv = document.getElementById("Multiplication");
+
+        for (let i = 1; i <= 10; i++) {
+            mulDiv.innerHTML += `2 * ${i} = ${2 * i} <br>`;
+        }
+        const array2 = document.getElementById("array1");
+        const array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        array1.map((item, index) => {
+            array2.innerHTML += `${item} = ${index+1} <br>`;
+        })
+
+
+    </script>
+</body>
+
+</html>
