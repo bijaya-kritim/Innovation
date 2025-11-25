@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #boxa{
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .buttons{
+            margin-top: 10px;
+        }
+        .colour{
+            box-shadow: 0px 0px 5px 0px gray;
+        }
+        .Change{
+            margin-top: 15px;
+            box-shadow: 0px 0px 5px 0px gray;
+        }
+
+        button{
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+        span{
+            margin-left: 10px;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="boxa" style="width: 500px; height: 100px; background-color: aqua;"></div>
+    <div class="buttons">
+
+        <div class="colour">
+            <span>Colours</span> <br>
+            <button id="btnBlue">Blue</button>
+            <button id="btnRed">Red</button>
+             <button id="btnGreen">Green</button>
+        </div>
+
+        <div class="Change">
+            <span>change_Shape</span> <br>
+            <button id="btnWidth">width</button> 
+            <button id="btnHeight">Heigth</button>
+            
+        </div>
+        <div class="Change">
+            <span>Visiblity</span> <br>
+                <button id="hide">Hide</button>
+                <button id="show">show</button>
+            
+        </div>
+        
+
+    </div>
+    
+    <script>
+        const buttonR =document.getElementById("btnRed");
+        const buttonb =document.getElementById("btnBlue");
+        const buttonG =document.getElementById("btnGreen");
+        const buttonW =document.getElementById("btnWidth");
+        const buttonH =document.getElementById("btnHeight");
+        const buttonh =document.getElementById("hide");
+        const buttonS =document.getElementById("show");
+        const box =document.getElementById("boxa");
+
+        buttonR.addEventListener("click" , ()=>{
+            box.style.backgroundColor= "red";
+        });
+
+        buttonb.addEventListener("click" , ()=>{
+            box.style.backgroundColor= "blue";
+        });
+
+        buttonG.addEventListener("click" , ()=>{
+            box.style.backgroundColor= "green";
+        });
+
+        buttonW.addEventListener("click" , ()=>{
+            box.style.width= "300px";
+        });
+
+        buttonH.addEventListener("click" , ()=>{
+            box.style.height= "500px";
+        });
+
+        buttonh.addEventListener("click" , ()=>{
+            box.style.display= "none";
+        });
+
+        buttonS.addEventListener("click" , ()=>{
+            box.style.display= "block";
+        });
+        
+
+
+
+
+    </script>
+</body>
+</html>

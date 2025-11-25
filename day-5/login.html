@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <style>
+      .form-Container {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #fff;
+        border-radius: 10px;
+      }
+
+      form {
+        width: 50vh;
+        border: 1px solid #000;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        font-size: 15px;
+        margin-bottom: 5px;
+        display: block;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        outline: none;
+        font-size: 14px;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background: #4a6cf7;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #3d5ae0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-Container">
+      <form action="#" method="#">
+        <label for="username">UserName:</label>
+        <input type="text" id="username" name="username" /><br /><br />
+
+        <label for="Password">Password:</label>
+        <input type="password" id="Password" name="Password" /><br /><br />
+
+        <button type="submit" id="btn">login</button>
+      </form>
+
+      <script>
+        const submit=document.getElementById("btn");
+        submit.addEventListener('click', ()=>{
+          alert("you are in");
+        })
+      </script>
+    </div>
+  </body>
+</html>
