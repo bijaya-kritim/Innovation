@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Laptop Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <h2 class="logo">LaptopStore</h2>
+
+    
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html"> Cart</a></li>
+    </ul>
+</nav>
+
+
+
+<section class="products-section">
+
+    <h2 class="section-title">Our Laptops</h2>
+
+    
+    <div class="filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="gaming">Gaming</button>
+        <button class="filter-btn" data-category="business">Business</button>
+        <button class="filter-btn" data-category="student">Student</button>
+        <button class="filter-btn" data-category="ultrabook">Ultrabook</button>
+    </div>
+
+    <div class="product-grid">
+
+       
+        <div class="product-card zoom-effect" data-category="gaming" onclick="openPreview(this)">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800">
+            <h3>Gaming Beast X1</h3>
+            <p class="price">$1299</p>
+        </div>
+
+        
+        <div class="product-card zoom-effect" data-category="ultrabook" onclick="openPreview(this)">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800">
+            <h3>UltraSlim Air 14</h3>
+            <p class="price">$899</p>
+        </div>
+
+        
+        <div class="product-card zoom-effect" data-category="business" onclick="openPreview(this)">
+            <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?w=800">
+            <h3>Business Pro 15</h3>
+            <p class="price">$1099</p>
+        </div>
+
+        
+        <div class="product-card zoom-effect" data-category="student" onclick="openPreview(this)">
+            <img src="https://images.unsplash.com/photo-1481277542470-605612bd2d61?w=800">
+            <h3>StudentBook S2</h3>
+            <p class="price">$599</p>
+        </div>
+
+        
+        <div class="product-card zoom-effect" data-category="gaming" onclick="openPreview(this)">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800" alt="Predator GX7">
+            <h3>Predator GX7</h3>
+            <p class="price">$1499</p>
+        </div>
+
+        <div class="product-card zoom-effect" data-category="ultrabook" onclick="openPreview(this)">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800">
+            <h3>FeatherLite 13</h3>
+            <p class="price">$999</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<div id="previewBox" class="preview-box">
+    <span onclick="closePreview()" class="close-btn">×</span>
+    <img id="previewImg" src="">
+    <h3 id="previewTitle"></h3>
+    <p id="previewPrice"></p>
+    <a href="product.html" class="btn">View Details</a>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
