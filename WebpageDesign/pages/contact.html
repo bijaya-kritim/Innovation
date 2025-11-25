@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="logo">WEB PAGE</div>
+
+    <ul class="nav-links">
+        <li><a href="../pages/index.html">Home</a></li>
+        <li><a href="../pages/about.html">About</a></li>
+        <li><a href="../pages/service.html">Service</a></li>
+        <li><a href="../pages/design.html">Design</a></li>
+        <li><a href="../pages/contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <div class="contact-hero">
+        <h1>Contact Us</h1>
+    </div>
+
+    <div class="contact-container">
+        <h2>Get in Touch</h2>
+        <p class="contact-intro">Feel free to reach out to us with any questions or inquiries.</p>
+
+        <div class="contact-row">
+
+
+            <div class="contact-info">
+                <h3>Our Details</h3>
+                <p><strong>Address:</strong> Kathmandu, Nepal</p>
+                <p><strong>Email:</strong> info@example.com</p>
+                <p><strong>Phone:</strong> +977-9876543210</p>
+
+            </div>
+
+
+            <form class="contact-form">
+                <input type="text" placeholder="Your Full Name" required>
+                <input type="email" placeholder="Your Email Address" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" id="send">Send Message</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+        const btn = document.getElementById("send");
+        btn.addEventListener("click",()=>{
+            alert("message send successfully!");
+        });
+    </script>
+</body>
+</html>

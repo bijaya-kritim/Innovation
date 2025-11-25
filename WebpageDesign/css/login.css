@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log In</title>
-  </head>
-
-  <style>
 .main {
     width: 100%;
-    background-image: url(images\ \(4\).jpeg);
+    background-image: url(../images/bgimg.webp);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -29,8 +20,6 @@
         padding: 20px;
         margin: 20px;
     }
-
-
 
     .login input {
       width: 100%;
@@ -97,32 +86,3 @@
     color: black;
     font-weight: bold;
 } 
-
-
-  </style>
-
-  <body>
-    <div class="main">
-
-   
-    <div class="login">
-      <fieldset>
-        <legend>Login Here</legend>
-        <form action="">
-          <input type="email" username="email" id="email" placeholder="Enter Email Here"/>
-          <br />
-          <input type="password" username="password" id="password" placeholder="Enter Password Here"/><br><br>
-
-          <div class="buttons">
-            <button class="btn3"><a href="#">LOG IN</a></button>
-            <p class="link"> Don't have an account ?
-            <button class="signup"><a href="./signup.html"> Sign Up</a> </button></p>
-
-          </div>
-        
-        </form>
-      </fieldset>
-    </div>
-     </div>
-  </body>
-</html>

@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    /* position: fixed;
+    width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: grey;
+    padding: 12px 20px;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-right: 100px;
+}
+
+.nav-links li a {
+    color: rgb(32, 13, 128);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+body{
+    background: #f7f7f7;
+    color: #333;
+}
+
+
+.contact-hero{
+    width: 100%;
+    height: 50vh;
+    background: url('https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=1400&q=60')
+    center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-hero h1{
+    background: rgba(0,0,0,0.5);
+    padding: 15px 35px;
+    border-radius: 10px;
+    font-size: 40px;
+    color: white;
+}
+
+
+.contact-container{
+    width: 80%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-container h2{
+    text-align: center;
+    font-size: 28px;
+    color: #0077cc;
+}
+
+.contact-intro{
+    text-align: center;
+    margin: 10px 0 30px;
+    color: #555;
+}
+
+.contact-row{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.contact-info{
+    flex: 1;
+    min-width: 260px;
+}
+
+.contact-info h3{
+    color: #0077cc;
+    margin-bottom: 10px;
+}
+
+.contact-info p{
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.contact-form{
+    flex: 1;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.contact-form button{
+    background: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover{
+    background: #005fa3;
+}
+
+
+@media (max-width: 768px){
+        .navbar {
+
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: transparent;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .contact-container{
+        width: 90%;
+        padding: 25px;
+    }
+
+    .contact-hero{
+        height: 40vh;
+    }
+
+    .contact-hero h1{
+        font-size: 32px;
+    }
+
+    .contact-row{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 480px){
+
+    .contact-hero{
+        height: 35vh;
+    }
+
+    .contact-hero h1{
+        font-size: 26px;
+        padding: 10px 20px;
+    }
+
+    .contact-container{
+        width: 95%;
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+        font-size: 14px;
+    }
+}
