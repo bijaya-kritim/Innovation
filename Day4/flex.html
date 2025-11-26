@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .parent{
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        background: blueviolet;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* wraple chai aba space overflow bhayo bhane tala tala aaudai janxa */
+        
+    }
+    .child{
+        flex-shrink: 1;
+        /* thau baki xa bhane thau narkaha hai 1 bhaye true*/
+        flex-grow: 1;
+        flex-basis: auto;
+        /* or: */
+        flex: 1 1 auto;
+    }
+
+    p{
+        background: white;
+    }
+
+    @media(max-width: 500px){
+        .parent{
+           background: blue;
+           flex-direction: column;
+        }
+    }
+
+</style>
+
+<body>
+    <!-- block element takes one whole line whereas inline element takes jati afu lai chaine teti matra  ex fof block: h1,p ;;;; span is inline-->
+
+    <div class="parent">
+        <div class="child"><p>Link</p></div>
+        <div class="child"><p>Link</p></div>
+        <div class="child"><p>Link</p></div>
+        <div class="child"><p>Link</p></div>
+        <div class="child"><p>Link</p></div>
+        <div class="child"><p>Link</p></div>
+    </div>
+
+</body>
+</html>

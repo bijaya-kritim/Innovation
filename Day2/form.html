@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <!-- fieldset adds a border  -->
+            <!-- legend is like header in a form -->
+            <legend>Application Form </legend>
+
+            <!-- label is for k ko lagi ko yo feild not that imp -->
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+
+            <br>
+
+            <label for="email">Email</label>
+            <input type="email" name="" id="">
+
+            <br>
+
+            <label for="password">Password</label>
+            <input type="password" name="" id="">
+
+            <br>
+
+            <label for="gender">Gender</label>
+            <!-- only option to not to get selected is keep gender in both the input text ko name wala option -->
+            <input type="radio" name="gender" id="">Male
+            <input type="radio" name="gender" id="">Female
+
+            <br>
+
+            <label for="course">Select your course</label>
+            <select name="" id="">
+                <optgroup label="Commerce">
+                    <option value="">BBA</option>
+                    <option value="">BBS</option>
+                </optgroup>
+                <optgroup label="IT">
+                    <option value="">BCA</option>
+                    <option value="">CSIT</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+
+            <label for="rules">Rules you must comply with</label>
+            <br>
+            <input type="checkbox" name="rules" id=""> Arrive at time <br>
+            <input type="checkbox" name="rules" id=""> Leave at time <br>
+            <input type="checkbox" name="rules" id=""> Complete your task on time <br><br>
+
+            <label for="">Date Of Birth</label>
+            <input type="date" name="" id="">
+            <br>
+            <input type="month"><br>
+            <input type="week"><br>
+            <input type="time"><br>
+            <input type="datetime-local">
+            <br>
+            <br>
+            <label for="cv">CV</label>
+            <input type="file" name="" id="">
+
+            <label for="colour">Choose your fav color</label>
+            <input type="color" name="" id="">
+            <br>
+
+            <label for="">Dedication Range</label>
+            <input type="range" name="" id="" min="0" max="10" value="6">
+            <!-- value le chai by deafult vaue set gardinxa yesma -->
+      
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

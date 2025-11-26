@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+  //   map most imp: value linxa and then item = index linxa
+
+    const data =["hello","hey","hi","hee"]
+
+    data.map((value,item)=>{
+        console.log(value,item);
+    })
+
+    // object banako
+
+    const user =[
+        {
+            username:"hari",
+            age:20
+        },
+         {
+          username: "Jenisha",
+          age: 20,
+          address: "KTM",
+        },
+        {
+          username: "Nisha",
+          age: 19,
+          address: "KTM",
+        }
+    ]
+
+  console.log(user);
+
+  user.map((value,item)=>{
+    console.log(value,item);
+      console.log(value.username);
+      console.log("the", value.username, "with age is", value.age );
+
+  })
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        background: #f0f4f7;
+      }
+
+      h2 {
+        margin-top: 15px;
+        color: #333;
+      }
+
+      #box {
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(137, 15, 15, 0.2);
+      }
+
+      button {
+        padding: 10px 20px;
+        margin: 6px;
+        /* border: none; */
+        border-radius: 8px;
+        background-color: #4b91c9;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #2e6ea4;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="box"
+      style="
+        width: 150px;
+        height: 150px;
+        background-color: rgb(48, 120, 144);
+        margin-bottom: 10px;
+      "
+    ></div>
+
+    <h2><u>Changing Colours</u></h2>
+    <button id="btnB">Blue</button>
+    <button id="btnY">Yellow</button>
+    <button id="btnP">Pink</button> <br />
+
+    <h2><u>Show and Hide</u></h2>
+    <button id="visible">VISIBLE</button>
+    <button id="invisible">INVISIBLE</button>
+
+    <h2><u>Increase/decrease Width & Height</u></h2>
+    <button id="incW">Inc Width</button>
+    <button id="decW">Dec Width</button>
+    <button id="incH">Inc Height</button>
+    <button id="decH">Dec Height</button>
+
+    <script>
+      const boxa = document.getElementById("box");
+
+      const blue = document.getElementById("btnB");
+      const yellow = document.getElementById("btnY");
+      const pink = document.getElementById("btnP");
+
+      blue.addEventListener("click", () => {
+        boxa.style.backgroundColor = "lightblue";
+      });
+
+      yellow.addEventListener("click", () => {
+        boxa.style.backgroundColor = "lightyellow";
+      });
+      pink.addEventListener("click", () => {
+        boxa.style.backgroundColor = "pink";
+      });
+
+      const incw = document.getElementById("incW");
+      const decw = document.getElementById("decW");
+      const inch = document.getElementById("incH");
+      const dech = document.getElementById("decH");
+
+      // INCREASE WIDTH
+      incw.addEventListener("click", () => {
+        let size = boxa.clientWidth;
+        boxa.style.width = size + 20 + "px";
+      });
+
+      // DECREASE WIDTH
+      decw.addEventListener("click", () => {
+        let size = boxa.clientWidth;
+        if (size > 20) {
+          // prevent negative sizes
+          boxa.style.width = size - 20 + "px";
+        }
+      });
+
+      // INCREASE HEIGHT
+      inch.addEventListener("click", () => {
+        let h = boxa.clientHeight;
+        boxa.style.height = h + 20 + "px";
+      });
+
+      // DECREASE HEIGHT
+      dech.addEventListener("click", () => {
+        let h = boxa.clientHeight;
+        if (h > 20) {
+          boxa.style.height = h - 20 + "px";
+        }
+      });
+
+      const show = document.getElementById("visible");
+      const Hide = document.getElementById("invisible");
+      Hide.addEventListener("click", () => {
+        boxa.style.display = "none";
+      });
+
+      show.addEventListener("click", () => {
+        boxa.style.display = "block";
+      });
+    </script>
+  </body>
+</html>
