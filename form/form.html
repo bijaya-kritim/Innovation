@@ -12,53 +12,112 @@
     
     <h1>Surveying Form</h1>
    
-    <form>
+    <form id="surveyForm">
         <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Enter your name">
+        <input type="text" id="name" placeholder="Enter your name" required>
 
-        
         <label for="email">Email</label>
-        <input type="text" id="email" placeholder="Enter your email">
+        <input type="text" id="email" placeholder="Enter your email" required>
 
-        
         <label for="age">Age</label>
-        <input type="text" id="age" placeholder="Enter your age">
+        <input type="text" id="age" placeholder="Enter your age" required>
 
-       
         <label for="role">Which option best describes you?</label>
         <select name="role" id="role">
+            <option value="">Select role</option>
             <option value="Student">Student</option>
             <option value="Intern">Intern</option>
             <option value="Director">Director</option>
             <option value="HR">H.R.</option>
         </select>
 
-        
         <label>Would you recommend GeeksForGeeks to your friend?</label>
         <label><input type="radio" name="recommend" value="yes"> Yes</label>
         <label><input type="radio" name="recommend" value="no"> No</label>
         <label><input type="radio" name="recommend" value="maybe"> Maybe</label>
 
-       
         <div class="form-control">
-            <label>Languages and Framework (check all that apply)</label>
-            <label><input type="checkbox" name="inp"> Java</label>
-            <label><input type="checkbox" name="inp"> C</label>
-            <label><input type="checkbox" name="inp"> C++</label>
-            <label><input type="checkbox" name="inp"> DBMS</label>
-            <label><input type="checkbox" name="inp"> JavaScript</label>
-            <label><input type="checkbox" name="inp"> HTML</label>
+            <label>Languages and Framework (check all that apply)</label><br>
+            <label><input type="checkbox" name="inp" value="Java"> Java</label>
+            <label><input type="checkbox" name="inp" value="C"> C</label>
+            <label><input type="checkbox" name="inp" value="C++"> C++</label>
+            <label><input type="checkbox" name="inp" value="DBMS"> DBMS</label>
+            <label><input type="checkbox" name="inp" value="JavaScript"> JavaScript</label>
+            <label><input type="checkbox" name="inp" value="HTML"> HTML</label>
         </div>
 
-       
         <label for="comments">Any other suggestion or message?</label>
         <textarea id="comments" placeholder="Enter your suggestion here."></textarea>
 
-       
-        <button type="submit">Submit</button>
+        <button type="submit" id="submit">Submit</button>
 
     </form>
 </div>
+
+
+<script>
+document.getElementById("surveyForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    if (name === "") {
+        alert("Please enter your name.");
+        return;
+    }
+    if (!/^[A-Za-z\s]+$/.test(name)) {
+        alert("Name must contain only letters.");
+        return;
+    }
+
+    const email = document.getElementById("email").value.trim();
+    if (email === "") {
+        alert("Please enter your email.");
+        return;
+    }
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email.");
+        return;
+    }
+
+    const age = document.getElementById("age").value.trim();
+    if (age === "") {
+        alert("Please enter your age.");
+        return;
+    }
+    if (!/^\d+$/.test(age) || age < 10 || age > 100) {
+        alert("Age must be a number between 1 and 120.");
+        return;
+    }
+
+    const role = document.getElementById("role").value;
+    if (role === "") {
+        alert("Please select your role.");
+        return;
+    }
+
+    const recommend = document.querySelector('input[name="recommend"]:checked');
+    if (!recommend) {
+        alert("Please choose your recommendation option.");
+        return;
+    }
+
+    const languages = document.querySelectorAll('input[name="inp"]:checked');
+    if (languages.length === 0) {
+        alert("Please select at least one language/framework.");
+        return;
+    }
+
+    const comments = document.getElementById("comments").value.trim();
+    if (comments.length > 200) {
+        alert("Comments cannot exceed 200 characters.");
+        return;
+    }
+
+    alert("Form submitted successfully!");
+    this.reset();
+});
+</script>
 
 </body>
 </html>
