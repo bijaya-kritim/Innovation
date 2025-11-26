@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        fieldset{
+            width: 30rem;
+            padding: 2rem;
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: #fff;
+        }
+        label{
+            color: black;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0.5rem;
+
+
+        }
+        input{
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        legend{
+            color: black;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .submit{
+            background-color: black;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        form{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+        }
+        .field1{
+            border: 1px solid black;
+            border-radius: 20px;
+
+         }
+         
+         select{
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-sizing: border-box;
+         }
+         @media(max-width: 1200px){
+            form{
+                flex-direction: column;
+            }
+
+           
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Form</legend>
+         <form>
+            <div>
+                <fieldset class="field1"> <legend>Personal Information</legend> <label for="name">Name</label>
+        <br>
+        <input type="text" id="name" placeholder="Enter your name">
+        <br>
+        <label for="name">Email </label>
+        <br>
+        <input type="email" id="email" placeholder="Enter your email">
+        <br>
+        <label for="name">Password </label>
+        <br>
+        <input type="password" id="password" placeholder="Enter your password">
+        <br>
+        <label for="name">Age </label>
+        <br>
+        <input type="number" placeholder="Enter your age" id="age">
+    <br>
+    <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+           <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+ </fieldset></div>
+ <div>
+    <fieldset class="field1"> <legend>Contact Information</legend> <label for="name">Phone Number</label>
+        <br>
+        <input type="tel" id="number" placeholder="Enter your phone number">
+        <br>
+        <label for="name">Address </label>
+        <br>
+        <input type="text" id="address" placeholder="Enter your address">
+        <br>    </fieldset>
+        <div> <fieldset class="field1"> <legend>Time</legend>
+        <input type="datetime-local" id="date">
+        </fieldset></div>
+    </form>
+    <br>
+      <input type="submit" id="submit" class="submit" value="submit">
+    </fieldset>
+  
+   
+   
+    <script>
+        const submit = document.getElementById("submit");
+        submit.addEventListener("click", (e) => {
+            e.preventDefault();
+            const name = document.getElementById("name").value;
+            const namepattern = /^[a-zA-Z ]{3,100}$/;
+            let formsubmision =true
+            if (!namepattern.test(name)) {
+                formsubmision = false
+                alert("Name is invalid")
+            }
+            const password = document.getElementById("password").value;
+            const passwordpattern = /^[1-9]{6,10}$/;
+           
+            if (!passwordpattern.test(password)) {
+                formsubmision = false
+                alert("Password is invalid")
+            }
+            const email = document.getElementById("email").value;
+            const emailpattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,10}$/;
+            
+            if (!emailpattern.test(email)) {
+                formsubmision = false
+               alert("Email is invalid")
+            }
+            const age = document.getElementById("age").value;
+            const agepattern = /^[0-9]{2}$/;
+            if (!agepattern.test(age)) {
+                formsubmision = false
+                alert("Age is invalid")
+            }
+             const number = document.getElementById("number").value;
+            const numberpattern = /^[0-9]{10}$/;
+            if (!numberpattern.test(number)) {
+                formsubmision = false
+                alert("Number is invalid")
+
+            }
+            const address = document.getElementById("address").value;
+            const addresspattern = /^[a-zA-Z ]{0,100}$/;
+            if (!addresspattern.test(address)) {
+                formsubmision = false
+                alert("Address is invalid")
+            }
+            const date = document.getElementById("date").value;
+            const datepattern = /^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}$/;
+            if (!datepattern.test(date)) {
+                formsubmision = false
+                alert("Date is invalid")
+            }
+
+            if(formsubmision){
+                alert("Form submitted successfully")
+            }
+           
+           
+           
+
+
+        })
+    </script>
+</body>
+
+</html>
