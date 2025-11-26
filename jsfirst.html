@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+            .first{
+                width: 300px;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+             .first{
+                display: flex;
+                flex-direction: column;
+             }
+    </style>
+    <div class="first">
+                       <h1>Sample form</h1>
+        <form action="">
+            <label for="Name">Name:</label>
+            <input type="text" placeholder="Enter your name" required>
+            <br> <br>
+            <label for="age">Age:</label>
+            <input type="text"  placeholder="Enter your age" required>
+            <br> <br>
+         
+             <button id="btn" type="submit"> Submit</button>
+        </form>
+    </div>
+
+    <script>
+        const button = document.getElementById('btn');
+        button.addEventListener('click', ()=> {
+                if (nameField.value.trim() === "" || ageField.value.trim() === "") {
+                e.preventDefault(); 
+                alert("Please fill all fields!");
+            } 
+            alert("Form submitted successfully!");
+        });
+    </script>
+    
+
+
+      <div class="button">
+     
+                    
+ 
+      </div>
+
+</body>
+</html>
+      

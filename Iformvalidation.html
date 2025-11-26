@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form >
+     <label for="name">Name: </label>
+     <input type="text" id="name" placeholder="enter your name" >
+     <br><br>
+     <label for="password">Password:</label>
+     <input type="password" id="password" placeholder="enter your password">
+     <br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="enter your enmail">
+      <br><br>
+      <label for="age">Age:</label>
+       <input type="number"  id="age" placeholder="enter your Age"> 
+       <br><br>
+       <button id="btn" type="submit">Submit</button>
+
+    </form>
+    
+      <script>
+        const button = document.getElementById("btn")
+        button.addEventListener("click",(e) => {
+            e.preventDefault();
+            const name = document.getElementById("name").value
+            const pattern = /^ [A-Za-z ] {3,100} $/
+            const password = document.getElementById("password").value
+            const passwordpattern =/^ .{6,10} $/
+
+             const email = document.getElementById("email").value
+             const emailpattern = /^[A-Za-z0-9_-]+@[A-Za-z]+\.[A-Za-z]{2,10} $/
+
+             const age = document.getElementById("age").value
+         
+           let formsubmission = true;
+
+            if(!pattern.test(name)) {
+                formsubmission=false
+                alert("name didnt meet criteria")
+            }  
+
+            if(!passwordpattern.test(password)) {
+                formsubmission= false
+                alert("password didnt meet criteria")
+            }
+ 
+             if(!emailpattern.test(email)) {
+                formsubmission=false
+                alert("email didnt meet criteria")
+             }
+
+             if(age>100|| age<0 || age=="") {
+                formsubmission=false
+                alert("age didnt meet criteria")
+             }
+
+                if(formsubmission) {
+                    alert("form submitted")
+
+                }
+        })
+      </script>
+     
+</body> 
+
+ 
+</html>
+
+<!-- .lesabaicharacter linxa hash tag haru jastai symbol -->
