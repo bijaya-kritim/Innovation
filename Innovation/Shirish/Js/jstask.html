@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Images Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>User Images Gallery</h1>
+<div id="userGallery" class="gallery"></div>
+
+<script>
+    
+    const numbers = [];
+    for(let i = 1; i <= 10; i++) numbers.push(i);
+
+    for(let i = 0; i < numbers.length; i++) {
+        console.log(`Index: ${i}, Value: ${numbers[i]}`);
+    }
+
+    for(let i = 0; i < numbers.length; i++) {
+        console.log(`Index from 1: ${i+1}, Value: ${numbers[i]}`);
+    }
+
+    for(let i = 1; i <= 10; i++) {
+        console.log(`9 x ${i} = ${9*i}`);
+    }
+
+    const users = [];
+    for (let i = 1; i <= 40; i++) {
+        users.push({
+            username: `User${i}`,
+            useremail: `user${i}@example.com`,
+            image: `https://picsum.photos/150?random=${i}`
+        });
+    }
+
+    const gallery = document.getElementById('userGallery');
+    let galleryHTML = '';
+
+    users.forEach(user => {
+        
+        galleryHTML += `<div class="userCard"><img src="${user.image}" alt="${user.username}"></div>`;
+        
+        console.log(`Username: ${user.username}, Email: ${user.useremail}`);
+    });
+
+    gallery.innerHTML = galleryHTML;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #eef3f7;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+
+legend {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+
+label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #cdd6dd;
+    background: #f8fafc;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #5ab4f8;
+    box-shadow: 0 0 6px rgba(90,180,248,0.3);
+}
+
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-row {
+    display: flex;
+    gap: 18px;
+}
+
+.form-row > div {
+    flex: 1;
+}
+
+
+textarea {
+    resize: none;
+}
+
+
+.confirmation {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: nowrap;
+}
+
+.confirmation input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #5ab4f8;
+}
+
+
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.btn.primary {
+    background: #5ab4f8;
+    color: white;
+}
+
+.btn.secondary {
+    background: #d5d5d5;
+    color: #333;
+}
+
+.button-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 900px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .glass {
+        padding: 20px;
+    }
+
+    .confirmation {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    legend {
+        font-size: 1.4rem;
+    }
+
+    input, select, textarea {
+        font-size: 0.95rem;
+        padding: 10px 12px;
+    }
+
+    button {
+        font-size: 0.95rem;
+        padding: 10px 14px;
+    }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Notebook Spread</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: #fdfdfd;
+    }
+
+    .spread {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .page {
+        width: 48%;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #000;
+        padding: 6px;
+    }
+
+    .weather-header {
+        font-weight: bold;
+    }
+    .weaather-label {
+        font-weight: normal;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="spread">
+
+    <div class="page">
+        <table>
+
+            <tr>
+                <td colspan="9" style="font-weight:bold;">RECIPE:</td>
+                <td colspan="5" style="text-align:right; font-weight:bold;">DATE:</td>
+            </tr>
+
+            
+            <tr>
+                <td  colspan="14" class="weather-header">WEATHER</td>
+            </tr>
+
+            <tr >
+                <td colspan="7" class="weather-label" >TEMP:</td>
+                <td colspan="7" class="weather-label">HUMIDITY:</td>
+            </tr>
+
+            <tr>
+                <td colspan="7" class="weather-label">WOOD USED:</td>
+                <td colspan="7" class="weather-label">PIT/COOKER TYPE:</td>
+            </tr>
+            
+
+            <tr>
+                <th colspan="2">TIME</th>
+                <th colspan="2">PIT TEMP</th>
+                <th colspan="2">PROBE TEMP</th>
+                <th colspan="4">MISC NOTES (VENTS, SETTINGS, ADDED FUEL, ETC)</th>
+            </tr>
+
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td colspan="4" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td colspan="4" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td colspan="4" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td colspan="4" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+            </tr>
+
+            <tr>
+                <td colspan="5">FINAL TEMP AT PULL:</td>
+                <td colspan="5">TEMP AFTER REST:</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="page">
+        <table>
+
+            <tr>
+                <td colspan="5" style="font-weight:bold;">PROTEIN:</td>
+                <td colspan="5" style="text-align:right; font-weight:bold;">DATE:</td>
+            </tr>
+
+            <tr>
+                <td colspan="5">PRE COOK WEIGHT:</td>
+                <td colspan="5">SOURCED FROM:</td>
+            </tr>
+
+            <tr>
+                <td colspan="5">TRIMMING/BUTCHERING:</td>
+                <td colspan="5">SEASONING/SAUCE/BRINE:</td>
+            </tr>
+
+            <tr>
+                <td colspan="5">WRAP/REST:</td>
+                <td colspan="5"></td>
+            </tr>
+
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>

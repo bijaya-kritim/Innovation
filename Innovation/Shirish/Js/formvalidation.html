@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="" id="name" placeholder="enter your name"><br>
+        <input type="password" id="password" placeholder="enter password"><br>
+        <input type="email" name="" id="email" placeholder="enter your email"><br>
+        <input type="number" name="" id="age" placeholder="enter age"><br>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+    <script>
+        const submit = document.getElementById("submit")
+        submit.addEventListener("click", (e)=>{
+            e.preventDefault()
+            const name = document.getElementById("name").value
+            const namepattern = /^[A-Za-z ]{3,100}$/
+
+            const password = document.getElementById("password").value
+            const passwordpattern = /^.{6,10}$/
+
+            const email = document.getElementById("email").value
+            const emailpattern = /^[A-Za-z0-9._-]+@[A-Za-z]+\.[a-zA-Z]{2,10}$/
+
+            const age = document.getElementById("age").value
+
+            let formSubmission = true
+
+            if(!namepattern.test(name)){
+                formSubmission = false
+                alert("your name is invalid")
+            }
+
+            if(!passwordpattern.test(password)){
+                formSubmission =false
+                alert("your password doesn't match the length, it must be between 6 to 10")
+
+            }
+            if(!emailpattern.test(email)){
+                formSubmission = false
+                alert("email doesn't seem to be valid")
+            }
+            
+            if(age>100 || age<0 || age ==""){
+                formSubmission = false
+                alert("enter valid age")
+            }
+            
+            if(formSubmission){
+                alert("form submitted")
+                
+            }
+
+
+
+
+        })
+    </script>
+</body>
+</html>

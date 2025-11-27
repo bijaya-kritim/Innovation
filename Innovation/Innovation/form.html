@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking Form</title>
+
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <form id="bookingForm" class="glass">
+        <fieldset>
+            <legend> Appointment Booking Form</legend>
+
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" placeholder="Enter full name">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="example@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="10-digit phone number">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="meeting-type">Type of Meeting</label>
+                <select id="meeting-type">
+                    <option value="" disabled selected>Select meeting type</option>
+                    <option value="Personal">Personal Meeting</option>
+                    <option value="Business">Business Meeting</option>
+                    <option value="Consultation">Consultation</option>
+                    <option value="Interview">Interview</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date">
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Preferred Time</label>
+                    <input type="time" id="time">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="duration">Duration</label>
+                <select id="duration">
+                    <option disabled selected>Select duration</option>
+                    <option value="15 Minutes">15 Minutes</option>
+                    <option value="30 Minutes">30 Minutes</option>
+                    <option value="60 Minutes">60 Minutes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Meeting Location</label>
+                <input type="text" id="location" placeholder="Enter location">
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Additional Notes (optional)</label>
+                <textarea id="notes" rows="4" placeholder="Write notes here..."></textarea>
+            </div>
+
+            <div class="confirmation">
+                <input type="checkbox" id="confirm">
+                <label for="confirm">I confirm that the information is correct</label>
+            </div>
+
+            <div class="button-row">
+                <button type="submit" class="btn primary">Book Appointment</button>
+                <button type="reset" class="btn secondary">Reset</button>
+            </div>
+
+        </fieldset>
+    </form>
+
+</div>
+
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function(event){
+    event.preventDefault();
+
+    const fullname = document.getElementById("fullname").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const meeting = document.getElementById("meeting-type").value;
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+    const duration = document.getElementById("duration").value;
+    const location = document.getElementById("location").value.trim();
+    const confirmBox = document.getElementById("confirm").checked;
+
+    const namePattern = /^[A-Za-z ]{3,100}$/;
+    const emailPattern = /^[A-Za-z0-9._-]+@[A-Za-z]+\.[A-Za-z]{2,10}$/;
+    const phonePattern = /^[0-9]{10}$/;
+
+    if (
+        fullname === "" &&
+        email === "" &&
+        phone === "" &&
+        meeting === "" &&
+        date === "" &&
+        time === "" &&
+        duration === "Select duration" &&
+        location === "" &&
+        !confirmBox
+    ) {
+        alert(" Please fill the form before submitting.");
+        return;
+    }
+
+    if(!namePattern.test(fullname)){
+        alert(" Enter a valid full name (only letters, min 3 chars).");
+        return;
+    }
+
+    if(!emailPattern.test(email)){
+        alert(" Enter a valid email address.");
+        return;
+    }
+
+    if(!phonePattern.test(phone)){
+        alert(" Phone number must be 10 digits.");
+        return;
+    }
+
+    if(meeting === ""){
+        alert(" Please select a meeting type.");
+        return;
+    }
+
+    if(date === ""){
+        alert(" Please select a date.");
+        return;
+    }
+
+    if(time === ""){
+        alert(" Please choose a time.");
+        return;
+    }
+
+    if(duration === "Select duration"){
+        alert(" Please select meeting duration.");
+        return;
+    }
+
+    if(location.length < 3){
+        alert(" Please enter a valid meeting location.");
+        return;
+    }
+
+    if(!confirmBox){
+        alert(" Please confirm your information.");
+        return;
+    }
+
+    alert(" Appointment Submitted Successfully!");
+    this.reset();
+});
+</script>
+
+</body>
+</html>
