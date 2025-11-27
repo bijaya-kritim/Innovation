@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="enter your name"
+      /><br /><br />
+      <input
+        type="password"
+        name=""
+        id="password"
+        placeholder="enter your password"
+      /><br />
+      <br />
+      <input
+        type="email"
+        name=""
+        id="email"
+        placeholder="enter your email"
+      /><br />
+      <br />
+      <input
+        type="number"
+        name=""
+        id="age"
+        placeholder="enter your age"
+      /><br /><br />
+      <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <script>
+      const submit = document.getElementById("submit");
+
+      submit.addEventListener("click", (e) => {
+        e.preventDefault();
+        //    console.log("clicked"); for debugging
+
+        const name = document.getElementById("name").value;
+        //Regular expression
+        const namePattern = /^[A-Za-z ]{3,100}$/;
+        // if(namePattern.test(name)){
+        //     console.log(" valid");
+        // }
+        // if(!namePattern.test(name)){
+        //     console.log("invalid");
+        // }
+
+        const password = document.getElementById("password").value;
+        const passwordPattern = /^.{6,10}$/;
+
+        const email = document.getElementById("email").value;
+        const emailPattern = /^[A-Za-z0-9._-]+@[A-Za-z]+\.[A-Za-z]{2,20}$/;
+
+        const age = document.getElementById("age").value;
+
+        let formsubmission = true;
+
+        //yedi name ko pattern ra name ko value milena bhane
+        if (!namePattern.test(name)) {
+          formsubmission = false;
+          alert("your name is inavalid");
+        }
+
+        if (!passwordPattern.test(password)) {
+          formsubmission = false;
+          alert("your password doesn't match, re-check");
+        }
+
+        if (!emailPattern.test(email)) {
+          formsubmission = false;
+          alert("your email doesn't match regex, re-check");
+        }
+
+        if (age > 100 || age < 0 || age == "") {
+          formsubmission = false;
+          alert("enter valid age");
+        }
+        if (formsubmission) {
+          alert("form submitted");
+        }
+      });
+    </script>
+  </body>
+</html>

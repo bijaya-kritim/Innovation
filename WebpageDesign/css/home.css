@@ -55,7 +55,7 @@
 }
 
 .nav-links li a:hover {
-    color: cyan;
+    color: rgb(37, 27, 144);
 }
 
 .search {
@@ -82,7 +82,8 @@
 
 /* CONTENT SECTION */
 .content {
-    margin-top: 15%;
+    margin-top: 16%;
+    margin-left: 3%;
     max-width: 600px;
 }
 

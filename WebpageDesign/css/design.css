@@ -5,11 +5,16 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: grey;
+    background: #F8FAFF;
     padding: 12px 20px;
     flex-wrap: wrap; /* allows wrapping on smaller screens */
 }

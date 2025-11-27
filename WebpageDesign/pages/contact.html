@@ -39,23 +39,60 @@
 
             </div>
 
-
-            <form class="contact-form">
-                <input type="text" placeholder="Your Full Name" required>
-                <input type="email" placeholder="Your Email Address" required>
-                <input type="text" placeholder="Subject" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <form id="contact_form" class="contact-form">
+                <input type="text" name="name" id="name" placeholder="Your Full Name" >
+                <input type="email" name="email" id="email" placeholder="Your Email Address" >
+                <input type="text" name="subject" id="subject" placeholder="Subject" >
+                <textarea placeholder="Your Message" rows="5" id="message"></textarea>
                 <button type="submit" id="send">Send Message</button>
-            </form>
-
+            </form> 
         </div>
     </div>
 
     <script>
-        const btn = document.getElementById("send");
-        btn.addEventListener("click",()=>{
-            alert("message send successfully!");
-        });
+
+      const form = document.getElementById("contact_form");
+
+      form.addEventListener("submit",(e)=>{
+        e.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const namePattern = /^[A-Za-z ]{3,50}$/
+
+        const email = document.getElementById("email").value.trim();
+        const emailPattern = /^[A-Za-z0-9._-]+@[A-Za-z]+\.[A-Za-z]{2,}$/
+
+        const subject = document.getElementById("subject").value.trim();
+        const subjectPattern = /^[A-Za-z0-9 _'"()!%&#-]{3,30}$/
+
+        const message = document.getElementById("message").value.trim();
+        const messagePattern = /^[A-Za-z0-9 _;'"()!%&#-]{2,100}$/
+
+        let formsubmission = true;
+
+        if(!namePattern.test(name)){
+            formsubmission = false;
+            alert("provide valid name");
+        }
+        if(!emailPattern.test(email)){
+            formsubmission = false;
+            alert("provide valid email");
+        }
+        if(!subjectPattern.test(subject)){ 
+            formsubmission = false;
+            alert("provide valid subject");
+        }
+        if(!messagePattern.test(message)){
+            formsubmission = false;
+            alert("provide valid message");
+        }
+
+        if(formsubmission){
+           alert("send successfully"); 
+        }
+    })
+
+
     </script>
 </body>
 </html>

@@ -6,30 +6,76 @@
     <title>Log In</title>
   </head>
 
-<link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/login.css" />
 
   <body>
     <div class="main">
+      <div class="login">
+        <fieldset>
+          <legend>Login Here</legend>
+          <form id="form" action="">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email Here"
+            />
+            <br />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter Password Here"
+            /><br /><br />
 
-   
-    <div class="login">
-      <fieldset>
-        <legend>Login Here</legend>
-        <form action="">
-          <input type="email" username="email" id="email" placeholder="Enter Email Here"/>
-          <br />
-          <input type="password" username="password" id="password" placeholder="Enter Password Here"/><br><br>
-
-          <div class="buttons">
-            <button class="btn3"><a href="#">LOG IN</a></button>
-            <p class="link"> Don't have an account ?
-            <button class="signup"><a href="./signup.html"> Sign Up</a> </button></p>
-
-          </div>
-        
-        </form>
-      </fieldset>
+            <div class="buttons">
+              <button id="login" class="btn3"><a href="#">LOG IN</a></button>
+              <p class="link">
+                Don't have an account ?
+                <button class="signup">
+                  <a href="./signup.html"> Sign Up</a>
+                </button>
+              </p>
+            </div>
+          </form>
+        </fieldset>
+      </div>
     </div>
-     </div>
+
+    <script>
+      const login = document.getElementById("login");
+
+      login.addEventListener("click",(e)=>{
+      e.preventDefault();
+
+      const email = document.getElementById("email").value.trim();
+      const emailPattern=/^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,}$/
+
+      const password = document.getElementById("password").value.trim();
+      const passwordPattern= /^.{6,19}$/
+
+      let formsubmission= true;
+
+      if(!emailPattern.test(email)){
+        formsubmission = false;
+        alert("paila email ramro sanga format way ma hal");
+      }
+
+      if(!passwordPattern.test(password)){
+        formsubmission = false;
+        alert("password ko ni format xa ni!");
+      }
+
+      if(formsubmission){
+        alert("logged in successfully!");
+      }
+      })
+      
+    
+
+
+      
+
+    </script>
   </body>
 </html>
