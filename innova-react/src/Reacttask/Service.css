@@ -1,0 +1,136 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #f7f7f7;
+    color: #333;
+}
+
+
+.services-hero{
+    width: 100%;
+    height: 50vh;
+    background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1400&q=60') 
+    center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-hero h1{
+    color: white;
+    padding: 15px 35px;
+    background: rgba(0,0,0,0.5);
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+.services-container{
+    width: 80%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.services-container h2{
+    font-size: 28px;
+    text-align: center;
+    color: #0077cc;
+    margin-bottom: 10px;
+}
+
+.service-intro{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #555;
+}
+
+.services-row{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-card{
+    flex: 1;
+    min-width: 260px;
+    max-width: 350px;
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.service-card img{
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.service-card h3{
+    color: #0077cc;
+    margin-bottom: 10px;
+}
+
+.service-card p{
+    color: #555;
+}
+
+@media (max-width: 768px){
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+          background-color: transparent;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .services-container{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .services-hero{
+        height: 40vh;
+    }
+
+    .services-hero h1{
+        font-size: 32px;
+    }
+
+    .services-row{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px){
+    .services-hero{
+        height: 35vh;
+    }
+
+    .services-hero h1{
+        font-size: 26px;
+        padding: 10px 20px;
+    }
+
+    .service-card{
+        padding: 18px;
+    }
+
+    .service-card img{
+        width: 65px;
+    }
+}

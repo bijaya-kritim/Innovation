@@ -1,0 +1,77 @@
+import React from 'react'
+import Navbar from './Navbar'   // ✅ Import the Navbar component properly
+import './About.css';
+import Footer from './Footer';
+
+export default function About() {
+  return (
+    <>
+      <Navbar />
+      <div className="about-hero">
+        <h1>About Us</h1>
+      </div>
+
+      <div className="about-container">
+        <h2>Who We Are</h2>
+        <p>
+          We are a dedicated team committed to providing high-quality services. 
+          Our goal is to deliver reliable, modern, and user-friendly solutions that 
+          make your experience better every day.
+        </p>
+
+        <h2 style={{ marginTop: "10px" }}>Our Values</h2>
+
+        <div className="row">
+          <div className="card">
+            <h3>Mission</h3>
+            <p>To provide innovative solutions that help people and businesses grow.</p>
+          </div>
+
+          <div className="card">
+            <h3>Vision</h3>
+            <p>To be a trusted brand known for excellence and creativity worldwide.</p>
+          </div>
+
+          <div className="card">
+            <h3>Commitment</h3>
+            <p>We focus on quality, customer satisfaction, and continuous improvement.</p>
+          </div>
+        </div>
+
+        <div className="team">
+          <h2 style={{ marginTop: "10px" }}>Meet Our Team</h2>
+
+          <div className="row">
+            <div className="team-member">
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=60"
+                alt=""
+              />
+              <h3>Jenisha Lama</h3>
+              <p>Founder & CEO</p>
+            </div>
+
+            <div className="team-member">
+              <img
+                src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=300&q=60"
+                alt=""
+              />
+              <h3>Pratigya Shrestha</h3>
+              <p>Designer</p>
+            </div>
+
+            <div className="team-member">
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=60"
+                alt=""
+              />
+              <h3>Pema Dechen</h3>
+              <p>Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer/>
+    </>
+  )
+}

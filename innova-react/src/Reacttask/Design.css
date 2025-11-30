@@ -1,0 +1,134 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #f7f7f7;
+    color: #333;
+}
+
+.design-hero{
+    width: 100%;
+    height: 50vh;
+    background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=60')
+    center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.design-hero h1{
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 15px 35px;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+.design-container{
+    /* width: 80%; */
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.design-container h2{
+    text-align: center;
+    font-size: 28px;
+    color: #0077cc;
+}
+
+.design-intro{
+    text-align: center;
+    margin: 10px 0 30px;
+    color: #555;
+}
+
+.design-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.design-box{
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.design-box:hover{
+    transform: translateY(-8px);
+}
+
+.design-box img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+} 
+
+.design-box h3{
+    margin: 12px 0;
+    color: #0077cc;
+}
+
+.design-box p{
+    padding: 0 15px 20px;
+    color: #555;
+    font-size: 15px;
+}
+
+
+@media (max-width: 768px){
+        .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: transparent;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .design-container{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .design-hero{
+        height: 40vh;
+    }
+
+    .design-hero h1{
+        font-size: 32px;
+    }
+
+}
+                                                                                                                     
+@media (max-width: 480px){
+    .design-hero{
+        height: 35vh;
+    }
+
+    .design-hero h1{
+        font-size: 26px;
+        padding: 10px 20px;
+    }
+
+    .design-box img{
+        height: 160px;
+    }
+
+    .design-container{
+        width: 95%;
+    }
+}
