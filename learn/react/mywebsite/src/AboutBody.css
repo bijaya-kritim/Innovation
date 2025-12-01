@@ -1,0 +1,22 @@
+h1{
+    font-size: 5rem;
+    color: black;
+    margin-bottom: 9rem;
+
+}
+question{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+
+}
+
+answer{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+body{
+    text-align: center;
+}

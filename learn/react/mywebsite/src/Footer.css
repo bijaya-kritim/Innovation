@@ -1,0 +1,33 @@
+ .footer {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 2em;
+            background: #858585;
+            color: white;
+            border-radius: 20px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            margin-top: 7em;
+
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer img {
+            width: 2em;
+            height: auto;
+            margin-right: 1em;
+            margin-bottom: -1em;
+
+        }
+
+        .footerspace {
+            margin: 1em;
+        }
+
+        .margin-top2 {
+            margin-top: 1em;
+        }
