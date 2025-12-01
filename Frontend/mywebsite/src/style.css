@@ -1,0 +1,444 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+nav {
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #0078ff;
+}
+
+
+
+.hero-section {
+    height: 420px;
+    background: url("https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=1400") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+
+.btn {
+    background: #0078ff;
+    color: white;
+    padding: 12px 25px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #005fcc;
+}
+
+.btn.small {
+    padding: 8px 16px;
+}
+
+
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin: 40px 0 20px;
+}
+
+
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+}
+
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+
+
+.preview-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 90%;
+    max-width: 420px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: center;
+}
+
+.preview-box img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.preview-box .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+
+
+.product-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+.product-page .product-img {
+    width: 420px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-page .product-info {
+    max-width: 420px;
+}
+
+
+
+.contact-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 450px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+
+
+.cta-section {
+    background: #0078ff;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 40px 20px;
+    border-radius: 10px;
+}
+
+
+
+footer {
+    background: #111;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 760px) {
+
+
+    .menu-toggle {
+        display: block;
+    }
+
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #111;
+        margin-top: 10px;
+        padding: 15px 0;
+        border-radius: 10px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 12px 0;
+        text-align: center;
+    }
+
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .hero-section {
+        height: 380px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .hero-text h1 {
+        font-size: 26px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .product-page {
+        padding: 20px 10px;
+    }
+
+    .preview-box {
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .product-grid {
+        padding: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        gap: 15px;
+    }
+
+    .product-card {
+        padding: 14px;
+    }
+
+    .product-card img {
+        border-radius: 10px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .product-page .product-info h2 {
+        font-size: 22px;
+    }
+
+    .product-page .product-info p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .preview-box {
+        max-width: 340px;
+        padding: 15px;
+    }
+
+    .preview-box img {
+        border-radius: 6px;
+    }
+
+    .preview-box h3 {
+        font-size: 18px;
+    }
+
+    .preview-box p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    footer {
+        font-size: 14px;
+        padding: 14px;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .hero-text h1 {
+        font-size: 22px;
+    }
+
+    .hero-text p {
+        font-size: 12px;
+    }
+}
+
+
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+
+.filter-btn {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.filter-btn.active {
+    background-color: #0288d1;
+    color: white;
+    border-color: #0288d1;
+}
+
+
+.filter-btn:hover {
+    background-color: #87ceeb;
+    color: white;
+    border-color: #87ceeb;
+}
