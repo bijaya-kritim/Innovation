@@ -12,8 +12,8 @@ import './HomeBody.css'
 export default function HomeBody() {
   return (
       <main>
-        <div className="dis">
-            <div> <img className="img2" src={Diwash} alt="Diwash"/></div>
+        <div className="m-10 gap-20 text-3xl text-center justify-center   ">
+            <div> <img className="w-30 h-auto border-5 rounded-100" src={Diwash} alt="Diwash"/></div>
             <div className="introcontent">
                 <div className="introduction">
                     DIWASH KARKI
