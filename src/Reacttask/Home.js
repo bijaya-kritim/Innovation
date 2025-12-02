@@ -49,8 +49,8 @@ export default function Home() {
       </div>
     </div>
   </section>
-     <About/>
-     <Projects/>
+     {/* <About/>
+     <Projects/> */}
     <Footer/>
 
         </>

@@ -9,8 +9,6 @@ export default function About() {
     <>
     <Navbar/>
 
-
-    
     <section id="about">
     <div class="container">
       <h2 class="section-title">About Me</h2>

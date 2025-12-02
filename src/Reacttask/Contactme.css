@@ -1,0 +1,91 @@
+
+
+      form {
+        width: 100%;
+        max-width: 450px;
+        margin-left: 27rem;
+        margin-top: 5rem;
+
+        
+      }
+
+      fieldset {
+        border: none;
+        padding: 25px;
+        border-radius: 12px;
+        background: white;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      }
+
+      legend {
+        font-size: 22px;
+        font-weight: bold;
+        color: #3366cc;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: 0.3s ease;
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+        outline: none;
+        border-color: #4a90e2;
+        box-shadow: 0 0 6px rgba(74, 144, 226, 0.5);
+      }
+
+      .radio-group {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 10px;
+      }
+
+      .radio-group label {
+        margin: 0;
+        font-weight: normal;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        font-size: 18px;
+        background: #4a90e2;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background: #3366cc;
+      }
+
+      @media (max-width: 480px) {
+        fieldset {
+          padding: 18px;
+        }
+
+        legend {
+          font-size: 20px;
+        }
+      }
