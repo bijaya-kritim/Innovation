@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .parent{
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        background-color: green;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+       }
+       .child{
+        flex-shrink: 1 1 auto;
+
+       }
+       p{
+        background-color: aqua;
+        width: 200px;
+        height: 40px;
+       }
+       @media(max-width){
+        .parent{
+            background-color: blueviolet;
+            flex-direction: column;
+        }
+       }
+
+    </style>
+</head>
+<body>
+  <div class="parent">
+    <img src="" alt="">
+    <div class="child"><p>Link</p></div>
+    <div class="child"><p>Link</p></div>
+    <div class="child"><p>Link</p></div>
+    <div class="child"><p>Link</p></div>
+    <div class="child"><p>Link</p></div>
+    <div class="child"><p>Link</p></div>
+   
+  </div>
+</body>
+</html>
