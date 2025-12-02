@@ -1,228 +1,230 @@
  body {
-            margin: 0;
-            padding: 0;
-        }
-      .porfileimg {
-            width: 2em;
-            height: 2em;
-            border-radius: 100%;
-            border: 1px solid white;
-        }
+     margin: 0;
+     padding: 0;
+ }
 
-        .introduction {
-            font-size: clamp(1rem, 5vw, 3rem);
-            text-align: center;
-            margin-top: 1em;
-        }
+ .porfileimg {
+     width: 2em;
+     height: 2em;
+     border-radius: 100%;
+     border: 1px solid white;
+ }
 
-        .mid {
-            font-size: clamp(1rem, 5vw, 3rem);
-            text-align: center;
-            margin-top: 1em;
-        }
+ .introduction {
+     font-size: clamp(1rem, 5vw, 3rem);
+     text-align: center;
+     margin-top: 1em;
+ }
 
-        .dis {
-            text-align: center;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 1.5em;
-            font-size: clamp(0.5rem, 1.5vw, 1rem);
-            text-align: center;
-            margin: 10em;
-        }
+ .mid {
+     font-size: clamp(1rem, 5vw, 3rem);
+     text-align: center;
+     margin-top: 1em;
+ }
 
-        .img2 {
-            width: 18em;
-            height: auto;
-            border: 0.2em solid rgb(206, 206, 206);
-            border-radius: 100%;
+ .dis {
+     text-align: center;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     gap: 1.5em;
+     font-size: clamp(0.5rem, 1.5vw, 1rem);
+     text-align: center;
+     margin: 10em;
+ }
 
-        }
+ .img2 {
+     width: 18em;
+     height: auto;
+     border: 0.2em solid rgb(206, 206, 206);
+     border-radius: 100%;
 
-        .img3 {
-            width: 18em;
-            height: auto;
-            border: 0.2em solid rgb(206, 206, 206);
-            border-radius: 20%;
+ }
 
-        }
+ .img3 {
+     width: 18em;
+     height: auto;
+     border: 0.2em solid rgb(206, 206, 206);
+     border-radius: 20%;
 
-        .header_container {
-            background-color: rgb(97, 97, 97);
-            padding: 1rem;
-            text-align: center;
-            position: sticky;
-            border-radius: 1rem;
-            width: 50%;
-            position: fixed;
+ }
 
-        }
+ .header_container {
+     background-color: rgb(97, 97, 97);
+     padding: 1rem;
+     text-align: center;
+     position: sticky;
+     border-radius: 1rem;
+     width: 50%;
+     position: fixed;
 
-        .skill {
-            font-size: clamp(1.5rem, 3vw, 5rem);
-            text-align: center;
-            margin-top: 1em;
-            margin-left: 30%;
-        }
+ }
 
-        fieldset {
-            border-radius: 20px;
-        }
+ .skill {
+     font-size: clamp(1.5rem, 3vw, 5rem);
+     text-align: center;
+     margin-top: 1em;
+     margin-left: 30%;
+ }
 
-        .introcontent {
-            max-width: 60%;
-        }
+ fieldset {
+     border-radius: 20px;
+ }
 
-        .midcontent {
-            max-width: 60%;
-        }
+ .introcontent {
+     max-width: 60%;
+ }
 
-        .skillbox {
-            width: auto;
-            height: auto;
-            color: black;
-            border-radius: 10px;
-            text-align: center;
-            
+ .midcontent {
+     max-width: 60%;
+ }
 
-        }
-
-        .skill2 {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-            font-size: clamp(1.5rem, 1vw, 5rem);
+ .skillbox {
+     width: auto;
+     height: auto;
+     color: black;
+     border-radius: 10px;
+     text-align: center;
 
 
-        }
+ }
 
-        .skillbox img {
-            width: 2em;
-            height: auto;
-        }
+ .skill2 {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     gap: 2rem;
+     flex-wrap: wrap;
+     font-size: clamp(1.5rem, 1vw, 5rem);
 
-        .language {
-            font-size: clamp(1.5rem, 3vw, 5rem);
-            text-align: center;
-            margin-left: 30% ;
-            margin-top: 2em;
-        }
 
-        .languagebox {
-            width: auto;
-            height: auto;
-            color: black;
-            border-radius: 10px;
+ }
 
-        }
+ .skillbox img {
+     width: 2em;
+     height: auto;
+ }
 
-        .language2 {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-            font-size: clamp(1.5rem, 1vw, 5rem);
-        }
+ .language {
+     font-size: clamp(1.5rem, 3vw, 5rem);
+     text-align: center;
+     margin-left: 30%;
+     margin-top: 2em;
+ }
 
-        .img001 {
-            width: 2em;
-            height: auto;
-        }
+ .languagebox {
+     width: auto;
+     height: auto;
+     color: black;
+     border-radius: 10px;
 
-        .img002 {
-            width: 1em;
-            height: auto;
-        }
+ }
 
-        .service {
-            font-size: clamp(1.5rem, 3vw, 5rem);
-            text-align: center;
-            margin-top: 1em;
-            margin: 2rem;
-        }
+ .language2 {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     gap: 2rem;
+     flex-wrap: wrap;
+     font-size: clamp(1.5rem, 1vw, 5rem);
+ }
 
-        .contacthead {
-            font-size: clamp(1rem, 4vw, 3rem);
-            text-align: center;
-            margin-top: 4em;
-        }
+ .img001 {
+     width: 2em;
+     height: auto;
+ }
 
-        .button0 {
-            text-align: center;
-        }
+ .img002 {
+     width: 1em;
+     height: auto;
+ }
 
-        .button1 {
-            padding: 1em;
-            margin: 1em;
-            border-radius: 2em;
-            width: 10em;
-            background-color: black;
-            color: white;
-        }
+ .service {
+     font-size: clamp(1.5rem, 3vw, 5rem);
+     text-align: center;
+     margin-top: 1em;
+     margin: 2rem;
+ }
 
-        .button2 {
-            padding: 1em;
-            margin: 1em;
-            border-radius: 2em;
-            width: 10em;
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
-        }
+ .contacthead {
+     font-size: clamp(1rem, 4vw, 3rem);
+     text-align: center;
+     margin-top: 4em;
+ }
 
-        .button3 {
-            padding: 1em;
-            margin: 1em;
-            border-radius: 2em;
-            width: 10em;
-            background-color: rgb(131, 131, 131);
-            color: white;
-        }
+ .button0 {
+     text-align: center;
+ }
 
-        .button1 a {
-            text-decoration: none;
-            color: white;
-        }
+ .button1 {
+     padding: 1em;
+     margin: 1em;
+     border-radius: 2em;
+     width: 10em;
+     background-color: black;
+     color: white;
+ }
 
-        .button2 a {
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-        }
+ .button2 {
+     padding: 1em;
+     margin: 1em;
+     border-radius: 2em;
+     width: 10em;
+     background-color: rgb(255, 255, 255);
+     color: rgb(0, 0, 0);
+ }
 
-        .button3 a {
-            text-decoration: none;
-            color: white;
-        }
+ .button3 {
+     padding: 1em;
+     margin: 1em;
+     border-radius: 2em;
+     width: 10em;
+     background-color: rgb(131, 131, 131);
+     color: white;
+ }
 
-        .margin-top {
-            margin-top: 5em;
-        }
-         @media (max-width: 600px) {
-            .dis {
-                flex-direction: column;
-                text-align: center;
-            }
+ .button1 a {
+     text-decoration: none;
+     color: white;
+ }
 
-            .dis img {
-                width: 70%;
-                max-width: 250px;
-            }
+ .button2 a {
+     text-decoration: none;
+     color: rgb(0, 0, 0);
+ }
 
-            .introcontent,
-            .midcontent {
-                max-width: 90%;
-            }
+ .button3 a {
+     text-decoration: none;
+     color: white;
+ }
 
-            .footer {
-                flex-direction: column;
-                align-items: center;
-            }
+ .margin-top {
+     margin-top: 5em;
+ }
 
-            .footer div {
-                margin-bottom: 1em;
-                text-align: center;
-            }
-        }
+ @media (max-width: 600px) {
+     .dis {
+         flex-direction: column;
+         text-align: center;
+     }
+
+     .dis img {
+         width: 70%;
+         max-width: 250px;
+     }
+
+     .introcontent,
+     .midcontent {
+         max-width: 90%;
+     }
+
+     .footer {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .footer div {
+         margin-bottom: 1em;
+         text-align: center;
+     }
+ }

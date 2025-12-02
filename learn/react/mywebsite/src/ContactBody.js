@@ -62,4 +62,5 @@ export default function ContactBody() {
     <input type="submit" id="submit" className="submit" value="Submit" />
     </div>
   );
+      
 }
