@@ -9,9 +9,6 @@ import Contact from './Reacttask/Contact';
 import Login from './Reacttask/Login';
 import Signup from './Reacttask/Signup';
 
-
-
-
 function App() {
   return (
   <>

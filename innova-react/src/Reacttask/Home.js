@@ -21,7 +21,7 @@ export default function Home() {
       </section>
 
       <section className="intro">
-        <h2>Welcome To Our Space</h2>
+        <h2>Welcome To Web Page</h2>
         <p>
           We believe in creating designs that feel warm, modern, and human.
           Everything we build blends creativity with clean functionality.
