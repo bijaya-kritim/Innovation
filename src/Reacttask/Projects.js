@@ -9,7 +9,9 @@ export default function Projects() {
   return (
     <>
     <Navbar/>
-
+    {/* <Link to={`/projects/1 ${id}`} className="project-links">View Details</Link>
+    <Link to={`/projects/2 ${id}`} className="project-links">View Details</Link>
+    <Link to={`/projects/3 ${id}`} className="project-links">View Details</Link> */}
 
       <section id="projects">
         <div class="container">
