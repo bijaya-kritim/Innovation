@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = [1,2,3,4,'hello']
+        console.log(arr)
+
+        const obj = {
+            'name ':'Ram',
+            'age': 25,
+            'address' : 'Kathmandu'
+        }
+        console.log(obj)
+        console.log(obj.address)
+        console.log(obj.name)
+
+
+        const arrobj = [
+            {
+                'name':'Hari',
+                'age':40
+            },
+            {
+                'name':'Shyam',
+                'age':30
+            }
+        ]
+        console.log(arrobj)
+        console.log([arrobj[1]])
+        console.log(arrobj[1].name)
+
+
+        const objarr = {
+           'numbers' : [1,2,3,4],
+           
+        }
+        console.log(objarr)
+        console.log(objarr.numbers)
+        console.log(objarr.numbers[2])
+
+
+        const arr1 =["name","address","contact","hello"]
+        for(var i = 0;i<4;i++){
+            console.log(arr1[i])
+            console.log(i+':'+arr1[i])
+        }
+       console.log("while loop")
+        var i = 0
+        while(i<4){
+            console.log(i+':'+arr1[i])
+            i++;
+        }
+
+        console.log("Do while loop")
+        var i = 0;
+        do{
+          console.log(i+':'+arr1[i])
+            i++;  
+        }while(i<4)
+
+
+
+        // map
+    const data = ["hello","hey","ni hao","konichiwa"]
+    data.map((value,item)=>{
+        console.log(value,item)
+    })
+
+    const user = [
+        {
+        "username":"Hari",
+        "userId":"201",
+        "email":"hai.com"
+        },
+        {
+        "username":"Ram",
+        "userId":"202",
+        "email":"rai.com"
+        },
+        {
+        "username":"Shari",
+        "userId":"203",
+        "email":"sai.com"
+        }
+    ]
+    console.log(user)
+
+    user.map((value,item)=>{
+        console.log(value,item)
+        console.log(value)
+         console.log("The "+value.username+" with email "+value.email+" has id "+value.userId)
+    })
+
+    </script>
+</body>
+</html>

@@ -47,15 +47,15 @@
             <h1>Website Intake Form</h1>
           </legend>
           <label for="name">Name</label><br><br>
-          <input type="text" class="name" name="name" placeholder="First Name"/> 
-          <input type="text" name="name" placeholder="Last Name" /> <br /><br />
+          <input type="text" id="name1" class="name" name="name" placeholder="First Name"/> 
+          <input type="text" id="name2" name="name" placeholder="Last Name" /> <br /><br />
           <label for="email">Email</label> <br> 
-          <input type="email" name="email" placeholder="abc123@gmail.com"/> <br /> <br>
+          <input type="email" id="email" name="email" placeholder="abc123@gmail.com"/> <br /> <br>
           <label for="Phone">Phone Number</label><br>
-          <input type="tel" name="phone" placeholder="(000) 000-0000" /> <br /><br />
+          <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" /> <br /><br />
           
         <label for="budget">What is Your estimated budget?</label> <br></BR>
-               <select name="" id="">
+               <select name="" id="budget" >
                 <optgroup label="Budget Range">
                     <option value=""></option>
                     <option value="">$1000-$5000</option>
@@ -65,20 +65,20 @@
                </select><br><br>
                <label for="msg">What is this project about?</label>
                 <br><br>
-                <textarea type="text"  rows="5" cols="30"></textarea>
+                <textarea type="text" id="project"  rows="5" cols="30"></textarea>
                 <br><br>
                 <label for="address">What is your current or intented website address?</label><br><br>
-                <input type="url" name="address" placeholder="www.example.com"/>
+                <input type="url" id="web" name="address" placeholder="www.example.com"/>
                 <br><br>
                 <label for="page">Approximately how many pages/sections will your website have?</label><br><br>
-                <input type="number" name="page" placeholder="ex:20" />
+                <input type="number" id="page" name="page" placeholder="ex:20" />
                 <br><br>
                 <label for="host">Do you need Hosting?</label> <br><br>
                 <input type="radio" name="host" />Yes <br>
                 <input type="radio" name="host" />No
                 <br><br>  
                 <label for="seo">How important is Search Engine Optimization for your website?</label> <br> <br>
-                 <select name="seo" id="">
+                 <select name="seo" id="seo">
                   <optgroup>
                     <option value=""> </option>
                     <option value="">Not Important</option>
@@ -92,27 +92,141 @@
                   <input type="radio" name="content" />No  <br><br>
                   <label for="audience">Who is your target audience?</label>
                   <br><br>
-                  <textarea type="text"  rows="5" cols="30"></textarea>
+                  <textarea type="text" id="audience" rows="5" cols="30"></textarea>
                   <br><br>
                   <label for="project">Do you have color scheme?</label> <br><br>
-                  <textarea type="text"  rows="5" cols="30"></textarea>
+                  <textarea type="text" id="color" rows="5" cols="30"></textarea>
                   <br><br>
                   <label for="file">Please list your reference websites.</label>
-                  <input type="file">  <br><br>
+                  <input type="file" id="file">  <br><br>
                   <label for="date">Date to complete</label> <br> <br>
-                  <input type="date"> <br><br>
+                  <input type="date" id="date"> <br><br>
                   <label for="msg">Further Message</label> <br><br>
                   <textarea name="msg" id="" placeholder="Additional message" rows="5" cols="30"></textarea> <br> <br>
-                  <button id="btn" type="submit" style="margin: 20px;padding:  10px 30px; border-radius: 5px; border: none; background-color:  rgb(69, 87, 255); color: #ffffff; font-size: large 2;">Submit</button>
+                  <button id="button" type="submit" style="margin: 20px;padding:  10px 30px; border-radius: 5px; border: none; background-color:  rgb(69, 87, 255); color: #ffffff; font-size: large 2;">Submit</button>
         </fieldset>
       </form> 
     </main>
     <script>
-        const button= document.getElementById("btn");
-        button.addEventListener("click",()=>{
-          
-          alert("Your form has been received successfully")
-        })
+     
+        const button= document.getElementById("button");
+        button.addEventListener("click",(e)=>{
+          e.preventDefault()
+          console.log("Clicked")
+        
+        const firstname = document.getElementById("name1").value
+        const firstnamepattern = /^[A-Za-z ]{3,50}$/
+
+        const secondname = document.getElementById("name2").value
+        const secondnamepattern = /^[A-Za-z ]{3,50}$/
+
+        const email = document.getElementById("email").value
+        const emailpattern = /^[A-Za-z0-9]+@[A-Za-z]+\.[A-Za-z]{10,50}$/
+
+        const phone = document.getElementById("phone").value
+        const phonepattern = /^[0-9]$/
+
+        const budget = document.getElementById("budget").value
+        
+        const website = document.getElementById("web").value
+        const websitepattern = /^[A-Za-z0-9]+\.[A-Za-z]{10,50}$/
+
+        const pages = document.getElementById("page").value
+
+        const seo = document.getElementById("seo").value
+
+        const audience = document.getElementById("audience").value
+        const audiencepattern = /^[A-Za-z ]{3,50}$/
+
+        const color = document.getElementById("color").value
+        const colorpattern = /^[A-Za-z ]{3,50}$/
+
+        const date = document.getElementById("date").value
+         let formSubmission = true
+
+        
+        
+
+        if(!firstnamepattern.test(firstname)){
+        formSubmission = false
+        alert("Your name is invalid!")
+        return false
+       }
+        if(!secondnamepattern.test(secondname)){
+        formSubmission = false
+        alert("Your name is invalid!")
+                return false
+
+       }
+       if(!emailpattern.test(email)){
+        formSubmission = false
+        alert("Your email is invalid!")
+                return false
+
+       }
+        if(!phonepattern.test(phone)){
+        formSubmission = false
+        alert("Your phone no is incorrect.")
+        return false
+       }
+       if(budget==""){
+          alert("Please select budget range.")
+          return false
+        }
+      
+       if(!websitepattern.test(website)){
+        formSubmission = false 
+        alert("Website address is wrong")
+        return false
+       }
+       if(page<0||page>20||page==""){
+        formSubmission = false 
+        alert("Please enter no of pages")
+        return false
+       }
+        const select = document.querySelector('input[name="host"]:checked');
+         if(select ==null){
+          alert("Please select an option")
+          return false
+         }
+       if(seo==""){
+          alert("Please select the option.")
+          return false
+        }
+         const selected = document.querySelector('input[name="content"]:checked');
+         if(selected ==null){
+          alert("Please select an option")
+          return false
+         }
+          if(!audiencepattern.test(audience)){
+        formSubmission = false
+        alert("Enter target audience")
+        return false
+       }
+         if(!colorpattern.test(color)){
+        formSubmission = false
+        alert("Enter color scheme")
+                return false
+
+       }
+       const file = document.getElementById("file")
+       if(file.files.length===0){
+        alert("Please select file ")
+                return false
+
+       }
+        if(date==""){
+          alert("Please select date to complete.")
+                  return false
+
+        }
+        if(formSubmission){
+        alet("Form is submitted")
+                return false
+
+       }
+})
     </script>
   </body>
 </html>
+        
